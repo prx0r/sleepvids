@@ -247,9 +247,15 @@ def parse_time(time_str):
     
     # Step 5: Build video
     print("[5/5] Building video...")
-    cabin_image = ENGINE.parent / "assets" / "ba_business_cabin.jpg"
+    # Select cabin image based on class
+    cabin_images = {
+        "first": ENGINE.parent / "assets" / "ba_forward.jpg",
+        "business": ENGINE.parent / "assets" / "ba_forward.jpg",
+        "economy": ENGINE.parent / "assets" / "ba_forward.jpg",
+    }
+    cabin_image = cabin_images.get(cabin, ENGINE.parent / "assets" / "ba_forward.jpg")
     if not cabin_image.exists():
-        cabin_image = ENGINE.parent / "channels" / "longhaul" / "assets" / "ba_business_cabin.jpg"
+        cabin_image = ENGINE.parent / "assets" / "ba_business_cabin.jpg"
     video_path = out_dir / f"{flight}_{route_data['departure']['iata']}_{route_data['arrival']['iata']}.mp4"
     
     if cabin_image.exists():
