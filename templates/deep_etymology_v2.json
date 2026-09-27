@@ -1,0 +1,99 @@
+{
+  "template_version": "2.0",
+  "format": "deep_etymology",
+  "description": "2-hour etymology sleep video. Each word is a master's thesis — its history, philosophy, science, and the stories it carries. The word is the door; the journey is the content.",
+
+  "structure": {
+    "total_duration_minutes": 120,
+    "narration_wpm": 105,
+    "total_words": 12600,
+    "sections": 6,
+    "principle": "Interesting enough to choose; forgiving enough to drift away from",
+    "tension_budget": 0,
+    "cadence": "constant",
+    "visual": "black_screen",
+    "audio": "voice_only_plus_ambient_bed_at_35_percent"
+  },
+
+  "wpm_targets": {
+    "section_1_word_today": {"minutes": 5, "words": 525, "purpose": "Ground in modern meaning. What the word means today. How we encounter it daily."},
+    "section_2_etymology": {"minutes": 15, "words": 1575, "purpose": "Roots, proto-forms, original meaning. The PIE root. The Latin journey. Old French into Middle English."},
+    "section_3_historical_journey": {"minutes": 30, "words": 3150, "purpose": "Century by century. Who used it. How meaning shifted. The social context. Tangents welcome here."},
+    "section_4_philosophy": {"minutes": 35, "words": 3675, "purpose": "Aristotle, thinkers, ethics of naming. The vegetative soul. Medieval scholasticism. The classification of life."},
+    "section_5_science": {"minutes": 25, "words": 2625, "purpose": "Modern understanding. Plant intelligence. The vegetative state. How science reshaped the word."},
+    "section_6_return": {"minutes": 10, "words": 1050, "purpose": "Circle back to the word with new understanding. The comfort of knowing. Sleep well."}
+  },
+
+  "section_template": {
+    "section_1": {
+      "title": "The Word Today",
+      "duration_minutes": 5,
+      "content": "Definition. Common usage. How we encounter it daily. The word in its current form — ordinary, unremarkable. Then the hook: this word is older than you think. It carries a history.",
+      "tangent_rules": "No tangents. Stay grounded. This is the anchor.",
+      "example": "Vegetable. A plant grown for its edible parts. We eat them every day. But the word is older than cooking. Older than farming. Older than agriculture itself."
+    },
+    "section_2": {
+      "title": "The Etymology",
+      "duration_minutes": 15,
+      "content": "Root language. Proto-forms. How it traveled. What it originally meant. The PIE root. The Latin journey. Old French. Middle English. Displacement of Old English wyrt.",
+      "tangent_rules": "Follow the root family. If a cognate appears (vigil, wake, vigor), mention it briefly but don't derail. The root is the spine.",
+      "example": "From PIE root *weg- 'to be strong, be lively.' From Latin vegere 'to be alive.' From vegetus 'vigorous, enlivened.' From vegetare 'to enliven.' From vegetabilis 'able to grow.' From Old French vegetable 'living, fit to live.' Into Middle English as 'capable of life or growth.' The word originally meant 'alive' — not 'edible.'"
+    },
+    "section_3": {
+      "title": "The Historical Journey",
+      "duration_minutes": 30,
+      "content": "Century by century. Who used it. How meaning shifted. The social context. This is the longest section — the meat of the story. Go on tangents. Follow the word where it goes.",
+      "tangent_rules": "Tangents are encouraged here. If the word leads to Roman agriculture, follow it. If it leads to medieval monasteries, follow it. If it leads to the Enlightenment classification mania, follow it. The word is the guide.",
+      "example": "In ancient Rome, 'vegetabilis' described anything that grew. No distinction between a tree and a turnip. In the medieval period, monks cataloged plants for medicinal use. The word began to split. By the Enlightenment, plants were classified by utility. The word narrowed."
+    },
+    "section_4": {
+      "title": "The Philosophy",
+      "duration_minutes": 35,
+      "content": "The thinkers. The ideas. The ethics of naming. This is where the word reveals something about how humans think. Aristotle's taxonomy. Medieval scholasticism. The boundary between alive and not-alive.",
+      "tangent_rules": "Follow the philosophy. If Aristotle leads to Plato, follow it. If the vegetative soul leads to the rational soul, follow it. But always come back to the word.",
+      "example": "Aristotle classified all living things into three categories: vegetative, sensitive, and rational. Plants were 'vegetative' — they grew but didn't move. This taxonomy dominated Western thought for 2,000 years. The word 'vegetable' carries this ancient classification in its bones."
+    },
+    "section_5": {
+      "title": "The Science",
+      "duration_minutes": 25,
+      "content": "Modern understanding. What we know now that they didn't. Plant intelligence. The vegetative state. How science reshaped the word and revealed Aristotle's mistake.",
+      "tangent_rules": "Follow the science. If plant intelligence leads to Monica Gagliano, follow it. If the vegetative state leads to Jennett and Plum, follow it. But always come back to the word.",
+      "example": "We now know plants feel. They respond to touch, light, gravity. They communicate through chemical signals. The 'vegetative' state isn't passive — it's a different kind of intelligence. Aristotle was wrong. The word remembers his mistake."
+    },
+    "section_6": {
+      "title": "The Return",
+      "duration_minutes": 10,
+      "content": "Circle back to the word. What it means now. How the journey changed it. The comfort of understanding. End with the word, the original meaning, and 'sleep well.'",
+      "tangent_rules": "No tangents. This is the landing. The listener should feel they've been somewhere and come back. Warm. Safe. Sleepy.",
+      "example": "Vegetable. A word that meant 'alive' now means 'food.' Every time you say it, you're speaking 2,000 years of human thought. The life is still there. Sleep well."
+    }
+  },
+
+  "word_selection_criteria": {
+    "must_have": [
+      "Dramatic meaning shift (ideally opposite or surprising)",
+      "Rich etymology (PIE root → multiple language transitions)",
+      "Philosophical connections (Aristotle, Plato, medieval thinkers)",
+      "Historical journey (centuries of documented usage change)",
+      "Modern relevance (science, medicine, culture)"
+    ],
+    "nice_to_have": [
+      "Etymology family (related words sharing the root)",
+      "Counterintuitive origin (word means something completely different now)",
+      "Cultural significance (used in important texts or debates)",
+      "Tangent potential (word leads to interesting places)"
+    ],
+    "avoid": [
+      "Words with simple, unchanged meanings",
+      "Words without philosophical connections",
+      "Words that are too modern (no historical journey)",
+      "Words without a clear etymology tree"
+    ]
+  },
+
+  "seo": {
+    "title_formula": "The Word '{Word}' — {Dramatic Hook} | Sleepy Etymology",
+    "description_formula": "Fall asleep to the complete history of the word '{word}'. {Hook}\n\nTimestamps:\n0:00 - The Word Today\n{timestamps}\n\nSleep well.",
+    "tags": ["etymology", "{word}", "word origins", "linguistics", "philosophy", "history", "sleep", "vocabulary", "education", "deep sleep", "fall asleep"]
+  }
+}

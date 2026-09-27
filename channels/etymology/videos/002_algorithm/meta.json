@@ -1,0 +1,39 @@
+{
+  "video_id": "video:etymology:002",
+  "channel": "channel:etymology",
+  "word": "algorithm",
+  "title": "The Word 'Algorithm' — A Persian Mathematician's Name Runs Your Life | Sleepy Etymology",
+  "duration_target_minutes": 120,
+  "word_target": 12600,
+  "narration_wpm": 105,
+  "voice": "V03_Lecturer",
+  "pace": -0.3,
+  "engine": "E5b",
+  "shelf": "MIND",
+  "format": "deep_etymology",
+  "template_version": "2.0",
+  "status": "expanded_draft",
+
+  "sections": [
+    {"id": 1, "title": "Hook + Map + Opening", "words": 700, "target": 700, "status": "done"},
+    {"id": 2, "title": "The Man and His Book", "words": 1500, "target": 1500, "status": "done"},
+    {"id": 3, "title": "The Journey of the Word", "words": 2500, "target": 2500, "status": "done"},
+    {"id": 4, "title": "The Modern Demon", "words": 2500, "target": 2500, "status": "done"},
+    {"id": 5, "title": "The Return", "words": 1000, "target": 1000, "status": "done"}
+  ],
+
+  "loops": [
+    "person → method → system → demon",
+    "spelling lie: -th- from Greek arithmos, not from the word's origin",
+    "two words one man: algorithm AND algebra from al-Khwarizmi",
+    "word outlived the work: methods replaced after 300 years, name survived",
+    "Baghdad to your phone: 9th century book → 12th century translation → your feed",
+    "zero → binary → computing → AI: man who gave us zero gave us the word for AI"
+  ],
+
+  "noslop_score": {
+    "confidence": 0.67,
+    "patterns": {"3LIST": 15, "CHOPPY": 1, "NEG": 2},
+    "comparison_to_vegetable": "Much cleaner — 0.67 vs 0.99 confidence"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "video_id": "video:etymology:001",
+  "channel": "channel:etymology",
+  "word": "vegetable",
+  "title": "The Word 'Vegetable' — A Word That Meant 'Alive' Now Means 'Food' | Sleepy Etymology",
+  "duration_target_minutes": 120,
+  "word_target": 12600,
+  "narration_wpm": 105,
+  "voice": "V03_Lecturer",
+  "pace": -0.3,
+  "engine": "E5b",
+  "shelf": "MIND",
+  "format": "deep_etymology",
+  "template_version": "2.0",
+  "status": "scaffolded",
+
+  "sections": [
+    {"id": 1, "title": "The Hook", "time": "0:00-2:00", "words": 210, "tone": "surprising"},
+    {"id": 2, "title": "The Map", "time": "2:00-4:30", "words": 260, "tone": "inviting"},
+    {"id": 3, "title": "The Cozy Opening", "time": "4:30-7:00", "words": 260, "tone": "warm"},
+    {"id": 4, "title": "The Root", "time": "7:00-15:00", "words": 840, "tone": "deep"},
+    {"id": 5, "title": "The Root Family", "time": "15:00-25:00", "words": 1050, "tone": "tangent"},
+    {"id": 6, "title": "The Word Enters English", "time": "25:00-32:00", "words": 735, "tone": "historical"},
+    {"id": 7, "title": "The Narrowing", "time": "32:00-40:00", "words": 840, "tone": "turning point"},
+    {"id": 8, "title": "The Decline", "time": "40:00-50:00", "words": 1050, "tone": "losing power"},
+    {"id": 9, "title": "Aristotle — The Man", "time": "50:00-58:00", "words": 840, "tone": "philosophical"},
+    {"id": 10, "title": "Aristotle — The Threefold Soul", "time": "58:00-70:00", "words": 1260, "tone": "reading"},
+    {"id": 11, "title": "The Medieval Word", "time": "70:00-80:00", "words": 1050, "tone": "historical"},
+    {"id": 12, "title": "The Medical Hijacking", "time": "80:00-90:00", "words": 1050, "tone": "twist"},
+    {"id": 13, "title": "The Misdiagnosis", "time": "90:00-95:00", "words": 525, "tone": "unsettling"},
+    {"id": 14, "title": "Plants Are Intelligent", "time": "95:00-108:00", "words": 1365, "tone": "wonder"},
+    {"id": 15, "title": "The Loop", "time": "108:00-112:00", "words": 420, "tone": "full circle"},
+    {"id": 16, "title": "The Return", "time": "112:00-120:00", "words": 840, "tone": "soft landing"}
+  ],
+
+  "sources": [
+    {"id": "etymonline", "url": "https://www.etymonline.com/word/vegetable"},
+    {"id": "etymonline_weg", "url": "https://www.etymonline.com/word/*weg-"},
+    {"id": "wiktionary", "url": "https://en.wiktionary.org/wiki/vegetable"},
+    {"id": "aristotle_de_anima", "url": "https://www.gutenberg.org/ebooks/5126"},
+    {"id": "adams_fins_2016", "url": "https://pubmed.ncbi.nlm.nih.gov/27295518"},
+    {"id": "nejm_1994", "url": "https://www.nejm.org/doi/full/10.1056/NEJM199405263302107"},
+    {"id": "bender_2015", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4413244"},
+    {"id": "gagliano_2014", "url": "https://pubmed.ncbi.nlm.nih.gov/24390479"},
+    {"id": "calvo_2020", "url": "https://academic.oup.com/aob/article/125/1/11/5575979"},
+    {"id": "mancuso", "url": "https://www.ibsafoundation.org/en/blog/the-fascinating-secret-life-of-plants"}
+  ],
+
+  "loops": [
+    "alive → not alive (1400s → 1976)",
+    "Aristotle's soul → Jennett & Plum's diagnosis (350 BCE → 1972)",
+    "root family kept power: vigour, wake, watch, witch",
+    "science proves Aristotle wrong with his own word",
+    "wyrt killed by vegetable, vegetable lost its meaning"
+  ],
+
+  "files": {
+    "research": "RESEARCH.md",
+    "scaffold": "SCAFFOLD.md",
+    "storyboard": "STORYBOARD.md",
+    "draft": "DRAFT.md",
+    "hook": "HOOK.md"
+  }
+}

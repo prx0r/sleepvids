@@ -1,0 +1,85 @@
+{
+  "channel": "interesting_tribes",
+  "title": "Interesting Tribes",
+  "description": "Explores the customs, beliefs, rituals, and daily life of tribes and indigenous peoples around the world. Uses actual audio recordings, field footage, and ethnographic sources. Each episode dives deep into one tribe — their origin, their worldview, their practices, and what they reveal about being human.",
+
+  "engine": "E5a",
+  "shelf": "MIND",
+
+  "format": {
+    "type": "tribe_profile",
+    "duration_target_minutes": 60,
+    "structure": [
+      "1. The Hook — a surprising custom or belief that challenges Western assumptions",
+      "2. Who They Are — origin, location, population, language family",
+      "3. The Worldview — how they see the world, their cosmology, their creation story",
+      "4. Daily Life — what a day looks like, food, shelter, social structure",
+      "5. The Rituals — ceremonies, rites of passage, spiritual practices",
+      "6. The Contact — how they've interacted with the outside world",
+      "7. The Lesson — what their customs reveal about being human",
+      "8. The Return — circle back to the hook, reflect, sleep well"
+    ]
+  },
+
+  "content_sources": [
+    "Ethnographic recordings (British Sound Effects Archive, Smithsonian Folkways)",
+    "Field footage (Creative Commons, documentary clips with permission)",
+    "Academic papers (anthropology journals, ethnographic monographs)",
+    "Gutenberg (PD travel accounts, early ethnographies)",
+    "Wikipedia (overview, population data, language families)",
+    "BBC documentaries, National Geographic archives",
+    "Indigenous media (produced by the tribes themselves where available)"
+  ],
+
+  "audio_style": {
+    "narration": "V01 Sage or V07 Navigator",
+    "ambient": "Field recordings from the tribe's environment — forest sounds, ocean, wind, drums",
+    "pacing": "Slow, respectful, unhurried. Let the audio breathe.",
+    "visual": "Black screen with ambient audio, OR slow documentary footage if available"
+  },
+
+  "examples": [
+    {"tribe": "Sentinelese", "hook": "They've rejected contact for 60,000 years. What do they know that we don't?"},
+    {"tribe": "Himba", "hook": "They have no word for time. They measure life by events, not hours."},
+    {"tribe": "Pirahã", "hook": "They have no numbers. No words for colors. And they're the happiest people studied."},
+    {"tribe": "Ainu", "hook": "The original people of Japan. Erased from history. Now fighting to be remembered."},
+    {"tribe": "San (Bushmen)", "hook": "They've lived in the Kalahari for 20,000 years. Their language clicks."},
+    {"tribe": "Mursi", "hook": "They put plates in their lips. The bigger the plate, the more beautiful."},
+    {"tribe": "Kalahari Bushmen", "hook": "They share everything. The concept of ownership doesn't exist."},
+    {"tribe": "Yanomami", "hook": "They dream together. Collective dreaming is their reality."},
+    {"tribe": "Maasai", "hook": "They drink blood every morning. It's their coffee."},
+    {"tribe": "Inuit", "hook": "They have 50 words for snow. But that's not the interesting part."},
+    {"tribe": "Dogon", "hook": "They knew about Saturn's rings before telescopes. How?"},
+    {"tribe": "Kayapo", "hook": "They paint their bodies with geometric patterns. The patterns are data."},
+    {"tribe": "Bai", "hook": "They worship 100 gods. Each one for a different part of life."},
+    {"tribe": "Batwa", "hook": "They were the first people in Central Africa. Now they live on the edges."},
+    {"tribe": "Sámi", "hook": "They herd reindeer across borders that don't exist in their language."}
+  ],
+
+  "process_notes": {
+    "research_workflow": [
+      "1. Pick a tribe. Find 3-5 academic sources (ethnographies, journal papers)",
+      "2. Find audio/visual content — field recordings, documentary footage, interviews",
+      "3. Identify the hook — one custom or belief that challenges assumptions",
+      "4. Map the worldview — cosmology, values, social structure",
+      "5. Write the script — weave narration with field audio. Let the audio breathe.",
+      "6. Fact-check — verify all claims against ethnographic sources. No invented customs.",
+      "7. Respect — present the tribe with dignity. No exoticizing. No judgment."
+    ],
+    "respect_principles": [
+      "Present customs in context. Don't cherry-pick for shock value.",
+      "Use the tribe's own words where possible. Quote ethnographers, not journalists.",
+      "Acknowledge what we don't know. Ethnography is incomplete.",
+      "Avoid the 'noble savage' trope. Tribes are complex, not idealized.",
+      "Credit the ethnographer and the date of their research. Knowledge changes.",
+      "If the tribe has its own media, center that. Their voice matters most."
+    ],
+    "audio_workflow": [
+      "Source field recordings from ethnographic archives",
+      "Layer ambient sounds from the tribe's environment",
+      "Narration sits on top — slow, respectful, unhurried",
+      "Let field audio play for 10-20 seconds without narration",
+      "Use field audio as transitions between sections"
+    ]
+  }
+}
