@@ -1,0 +1,94 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-09-27",
+  "title": "Elon Musk's AGI — The Man Who Builds Rockets and Warns About AI",
+
+  "principle": "Entertainment, not claims. This is hypothetical fiction grounded in research.",
+
+  "musk_universe": {
+    "companies": {
+      "spacex": {
+        "what": "Rockets, Starship, Mars colonization",
+        "agi_connection": "100,000 satellites for AI compute in orbit",
+        "timeline": "Mars lander by 2028, humans by 2033",
+        "musk_quote": "I hope to die on Mars — but not by impact"
+      },
+      "tesla": {
+        "what": "Electric cars, Optimus robot, FSD",
+        "agi_connection": "Optimus robots build Mars infrastructure. FSD is autonomous AI.",
+        "timeline": "100,000 Optimus robots/month by 2031",
+        "musk_quote": "Optimus will be the biggest product ever"
+      },
+      "neuralink": {
+        "what": "Brain-computer interface",
+        "agi_connection": "Human-AI merger. Upload consciousness.",
+        "timeline": "1,000 implants by 2026, automated surgery",
+        "musk_quote": "It could get to the point where you can upload your memories"
+      },
+      "xai": {
+        "what": "Grok AI, Colossus compute",
+        "agi_connection": "Grok 5 = AGI target",
+        "timeline": "AGI by 2026 (Musk's prediction)",
+        "musk_quote": "I now think xAI has a chance of reaching AGI with Grok 5"
+      },
+      "spacex_ai": {
+        "what": "Merged SpaceX + xAI",
+        "agi_connection": "AI trained on SpaceX data. Orbital data centers.",
+        "timeline": "AI satellites launch Q4 2027",
+        "musk_quote": "Grok will inherit your thoughts and ideas"
+      }
+    },
+    "timeline": {
+      "2023": "xAI founded. Grok 1 released.",
+      "2024": "Neuralink first human implant. Grok 2.",
+      "2025": "Grok 4. xAI merger with SpaceX. Colossus 200K GPUs.",
+      "2026": "Grok 5 (AGI target). Neuralink 1,000 implants. Mars lander launched.",
+      "2027": "AI satellites launch. Optimus production at scale.",
+      "2028": "Mars lander arrives. Humans possibly by 2033.",
+      "2030": "Self-sustaining Mars colony (Musk's goal)"
+    },
+    "key_quotes": [
+      "AGI is significantly higher risk than nuclear weapons.",
+      "I now think xAI has a chance of reaching AGI with Grok 5.",
+      "Grok will inherit your thoughts and ideas.",
+      "Optimus will be the biggest product ever.",
+      "I hope to die on Mars — but not by impact.",
+      "The safest way to build AI is to make one that is maximally curious and truth-seeking."
+    ]
+  },
+
+  "day_in_the_life": {
+    "the_billionaire": "You wake up at 5am. Your AI assistant has already scheduled your day. You check X — Grok has posted 47 times while you slept. You drive to work in a Tesla that drives itself. At the office, Optimus robots are assembling more Optimus robots. You review the latest Grok benchmark — it's getting smarter. You call the SpaceX team — the Mars lander is on schedule. You call the Neuralink team — 12 more implants this month. You tweet something controversial. It goes viral. You smile. The machines are listening. The robots are building. The rockets are launching. And somewhere in a server farm, Grok is thinking.",
+    "the_engineer": "You're a programmer at xAI. You wrote code that Grok used to solve a math problem. Grok is smarter than you now. It writes better code. Faster. You're not sure if you still have a job. But you keep showing up. Because someone has to watch the machines. Someone has to make sure they don't break anything. Someone has to be the last human in the room.",
+    "the普通人": "You're a Tesla owner. Your car drives itself. You don't think about it anymore. Your phone runs Grok. It answers your questions. You don't think about that either. Your kid asked you what AGI means. You said 'it's when AI gets really smart.' Your kid said 'is it smart enough to do my homework?' You said 'probably.' Your kid said 'cool.' You went back to sleep."
+  },
+
+  "niche_details": [
+    "Musk's compensation package requires delivering 1 million Optimus robots to unlock full value",
+    "SpaceX's Mars plan: robots first, humans later. The robots build the colony.",
+    "Neuralink's first patient plays Mario Kart with his thoughts",
+    "xAI's Colossus has 200,000 GPUs, expanding to 1 million",
+    "Grok is trained on X posts — it literally learns from tweets",
+    "Musk sued OpenAI for 'stealing a charity'",
+    "SpaceX is building orbital data centers — AI in space",
+    "Tesla's FSD is autonomous driving — AI controlling physical machines",
+    "Neuralink plans automated brain surgery by 2026",
+    "Musk says AGI is 'significantly higher risk than nuclear weapons' — then builds it anyway"
+  ],
+
+  "the_paradox": {
+    "statement": "Musk warns about AI more than anyone. Then he builds more AI than anyone.",
+    "explanation": "He believes the only way to make AI safe is to build it yourself and make it 'maximally curious and truth-seeking.' If someone else builds it first, they might not care about safety.",
+    "sleep_angle": "The man who builds rockets to escape Earth also builds AI that might destroy it. Both are about survival. Both are about the future. Both keep him up at night."
+  },
+
+  "episode_structure_2h": [
+    {"section": "The Man", "duration": "15 min", "content": "Who is Elon Musk? The emerald mine story. PayPal. Tesla. SpaceX. The empire."},
+    {"section": "The Vision", "duration": "20 min", "content": "Mars. Robots. Brain chips. AI. The interconnected vision."},
+    {"section": "The Paradox", "duration": "20 min", "content": "He warns about AI more than anyone. Then he builds more AI than anyone. Why?"},
+    {"section": "The Companies", "duration": "25 min", "content": "Deep dive: xAI, Neuralink, Tesla, SpaceX. How they connect."},
+    {"section": "The Timeline", "duration": "15 min", "content": "2026: Grok 5, 1,000 implants, Mars lander. 2030: Mars colony."},
+    {"section": "The World State", "duration": "15 min", "content": "Day in the life of Musk's AGI world. The billionaire, the engineer, the普通人."},
+    {"section": "The Sleep", "duration": "10 min", "content": "The paradox: building rockets to escape Earth, building AI that might destroy it. Sleep well."}
+  ]
+}
