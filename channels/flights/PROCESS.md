@@ -27,16 +27,43 @@ Airline announcements + cabin ambiance + flight map = the whole video. The visua
 ### Cabin ambiance
 - **Freesound.org** — cabin noise, seatbelt chimes, engine hum (CC0/CC-BY)
 
-## The visual: POV seat-back screen
+## The visual: the lofi model
 
-The video is a first-person view from an airplane seat. In front of you is the back of a seat. Embedded in that seat is a small screen. On that screen, the flight map is playing — a plane icon moving slowly across a map, showing the route, altitude, time remaining.
+Static cabin photo + animated flight map on seat-back screen = the whole video. Same as lofi girl studying, but you're on a plane.
 
-### How to create it
-1. **Static background**: Image of airplane seat-back (from Pexels/Pixabay CC0, or generate)
-2. **Flight map overlay**: Animated plane icon moving along route on the screen
-3. **Route data**: From OpenFlights (free) — get lat/lon for departure and arrival airports
-4. **Animation**: CSS/JS animation moving plane icon along great circle route
-5. **Sync**: Flight map updates with captain announcements
+### The layers
+```
+Layer 1 (bottom): Cabin background photo
+Layer 2 (middle): Seat-back screen with flight map animation
+Layer 3 (top): Subtle grain/overlay for texture
+Layer 4 (audio): Cabin ambiance (engine hum)
+Layer 5 (audio): Captain announcements at intervals
+```
+
+### Step 1: Get a cabin photo
+- Pexels CC0: "airplane cabin interior" (30,000+ photos)
+- Pixabay: "cabin interior" (10,000+ photos)
+- Wikimedia Commons: Ryanair cabin, BA cabin, etc.
+- Crop to show: seat back in front of you, with screen area visible
+- The screen area is where the flight map goes
+
+### Step 2: Create the flight map overlay
+- The flight map sits on top of the seat-back screen area
+- It's a small rectangle showing: route line, plane icon, altitude, time remaining
+- The plane icon moves slowly along the route
+- Data from OpenFlights (free CSV): airport lat/lon for every airport
+- Animation: CSS/JS moving plane icon along great circle route
+
+### Step 3: Add subtle animation
+- The flight map moves (plane icon along route)
+- Optional: slight camera shake (simulates turbulence)
+- Optional: window light changes (day/night cycle)
+- Keep it minimal — the movement should be hypnotic, not distracting
+
+### Step 4: Layer the audio
+- Cabin ambiance: engine hum, white noise, occasional creaks
+- Captain announcements: at natural intervals (takeoff, cruise, turbulence, descent, landing)
+- The announcements are the "event" — everything else is ambient
 
 ### Why this works
 - Everyone has stared at a flight map at 3am, exhausted, drifting off
@@ -44,6 +71,14 @@ The video is a first-person view from an airplane seat. In front of you is the b
 - It moves at a predictable pace — no surprises
 - Combined with captain's voice + cabin hum = hypnotic
 - Can run for 12+ hours (long-haul routes)
+
+### Per-airline differentiation
+| Airline | Cabin photo | Seat style | Screen type | Announcement style |
+|---------|-------------|------------|-------------|-------------------|
+| Ryanair | Blue/yellow seats, tight pitch | Fixed recline, no pockets | Small screen | Direct, efficient |
+| British Airways | Navy seats, wider pitch | Reclining, IFE screens | Large screen | Warm, professional |
+| Japan Airlines | Grey seats, compact | Reclining, personal screens | HD screen | Polite, melodic |
+| Lufthansa | Grey/blue seats | Reclining, IFE | Standard screen | Precise, German |
 
 ## Captain voice clone approach
 Clone ONE captain voice from the itch.io voice pack samples. Record additional phrases as needed. The clone produces all announcements for all routes.
