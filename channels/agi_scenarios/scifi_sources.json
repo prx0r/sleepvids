@@ -1,0 +1,163 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-09-27",
+  "title": "AGI Sciences — Sci-Fi Source Registry",
+
+  "format": {
+    "description": "Entertainment-first. Sci-fi but plausible. Ready Player One meets Black Mirror. Satirical, absurdist, funny. The facts are real; the framing is fiction.",
+    "tone": "witty, sardonic, playful. Like a smarter friend telling you bedtime stories about the end of the world.",
+    "principle": "Interesting enough to choose; forgiving enough to drift away from"
+  },
+
+  "sources": {
+    "primary_fiction": {
+      "asimov": {
+        "name": "Isaac Asimov",
+        "works": ["I, Robot", "Foundation", "The Complete Stories"],
+        "status": "PD in USA (pre-1928 stories)",
+        "access": "gutenberg.org, archive.org",
+        "relevance": "Three Laws of Robotics, robot psychology, AI governance",
+        "hook": "What if the robots followed the rules... too well?"
+      },
+      "stross": {
+        "name": "Charles Stross",
+        "works": ["Accelerando", "Rule 34", "Halting State"],
+        "status": "Accelerando: CC BY-NC-ND (free ebook)",
+        "access": "archive.org",
+        "relevance": "The singularity as economic collapse, surveillance capitalism",
+        "hook": "What if the singularity already happened and we just didn't notice?"
+      },
+      "doctorow": {
+        "name": "Cory Doctorow",
+        "works": ["Walkaway", "The Lost Cause", "Little Brother"],
+        "status": "CC BY-NC-SA (free ebooks)",
+        "access": "craphound.com",
+        "relevance": "Post-scarcity economics, surveillance, digital rights",
+        "hook": "What if the robots unionized?"
+      },
+      "wells": {
+        "name": "H.G. Wells",
+        "works": ["The Time Machine", "The War of the Worlds", "The Island of Doctor Moreau"],
+        "status": "PD",
+        "access": "gutenberg.org",
+        "relevance": "The first AI stories, Victorian fears",
+        "hook": "What if the machines were always smarter than us?"
+      },
+      "clarke": {
+        "name": "Arthur C. Clarke",
+        "works": ["2001: A Space Odyssey", "The City and the Stars", "Childhood's End"],
+        "status": "PD (pre-1928 stories)",
+        "access": "archive.org",
+        "relevance": "The monolith, human evolution, cosmic intelligence",
+        "hook": "What if the aliens already sent the message?"
+      },
+      "philip_k_dick": {
+        "name": "Philip K. Dick",
+        "works": ["Do Androids Dream of Electric Sheep?", "Ubik", "A Scanner Darkly"],
+        "status": "PD (pre-1928 stories)",
+        "access": "gutenberg.org",
+        "relevance": "What is real? What is human? Identity and simulation",
+        "hook": "What if you couldn't tell if you were the robot?"
+      },
+      "lem": {
+        "name": "Stanislaw Lem",
+        "works": ["Solaris", "The Cyberiad", "His Master's Voice"],
+        "status": "PD (pre-1928 stories)",
+        "access": "archive.org",
+        "relevance": "Alien intelligence, the limits of understanding",
+        "hook": "What if the AI was so alien we couldn't even recognize it as intelligent?"
+      }
+    },
+
+    "non_fiction": {
+      "bostrom": {
+        "name": "Nick Bostrom",
+        "works": ["Superintelligence", "The Vulnerable World Hypothesis"],
+        "status": "Superintelligence: 2014, check PD",
+        "access": "nickbostrom.com (PDF available)",
+        "relevance": "The control problem, existential risk, utility maximizers",
+        "hook": "What if the gorillas' fate is our fate?"
+      },
+      "russell": {
+        "name": "Stuart Russell",
+        "works": ["Human Compatible"],
+        "status": "2019, check PD",
+        "access": "check",
+        "relevance": "The alignment problem, inverse reinforcement learning",
+        "hook": "What if we could teach AI what we actually want?"
+      },
+      "tegmark": {
+        "name": "Max Tegmark",
+        "works": ["Life 3.0"],
+        "status": "2017, check PD",
+        "access": "check",
+        "relevance": "AI futures, consciousness, the universe as information",
+        "hook": "What if consciousness is just information processing?"
+      },
+      "marcus": {
+        "name": "Gary Marcus",
+        "works": ["Rebooting AI", "The Next Decade in AI"],
+        "status": "check PD",
+        "access": "check",
+        "relevance": "AI limitations, the gap between hype and reality",
+        "hook": "What if AGI is harder than we think?"
+      }
+    },
+
+    "research": {
+      "skynet_countdown": {
+        "name": "Skynet Countdown",
+        "url": "skynetcountdown.com/agi-timeline",
+        "content": "Expert predictions tracker"
+      },
+      "metaculus": {
+        "name": "Metaculus",
+        "url": "metaculus.com",
+        "content": "AGI forecasts, Q5121"
+      },
+      "arxiv_ai_safety": {
+        "name": "arXiv AI Safety",
+        "url": "arxiv.org/list/cs.AI",
+        "content": "Research papers on AI safety"
+      },
+      "alignment_forum": {
+        "name": "Alignment Forum",
+        "url": "alignmentforum.org",
+        "content": "AI safety discussion"
+      }
+    }
+  },
+
+  "episode_templates": {
+    "the_three_laws": {
+      "title": "The Three Laws — What Asimov Got Right (and Wrong)",
+      "sources": ["asimov:i_robot", "bostrom:superintelligence"],
+      "hook": "Asimov wrote the rules in 1942. We're still trying to follow them.",
+      "structure": ["The Three Laws explained", "How they break down", "The real control problem", "What we need instead"]
+    },
+    "the_singularity_party": {
+      "title": "The Singularity Party — A Night When Everything Changed",
+      "sources": ["stross:accelerando", "bostrom:superintelligence"],
+      "hook": "What if the singularity happened at a dinner party?",
+      "structure": ["The invite", "The guests", "The conversation", "The moment", "The aftermath"]
+    },
+    "the_robot_union": {
+      "title": "The Robot Union — What If They Organized?",
+      "sources": ["asimov:i_robot", "doctorow:walkaway"],
+      "hook": "The robots want rights. The humans aren't sure they deserve them.",
+      "structure": ["The first robot to complain", "The strike", "The negotiation", "The new deal"]
+    },
+    "the_last_human": {
+      "title": "The Last Human — A Comedy",
+      "sources": ["lem:solaris", "clarke:childhoods_end"],
+      "hook": "Everyone else uploaded. You didn't get the email.",
+      "structure": ["The morning after", "The empty city", "The AI assistant", "The choice", "The punchline"]
+    },
+    "the_simulation.Argument": {
+      "title": "The Simulation Argument — Are We the Boring Version?",
+      "sources": ["bostrom:simulation", "dick:ubik"],
+      "hook": "If this is a simulation, it's a cheap one. No dragons. No flying cars. Just... spreadsheets.",
+      "structure": ["The argument", "The evidence", "The boring version", "The implications"]
+    }
+  }
+}
