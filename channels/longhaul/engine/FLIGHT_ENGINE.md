@@ -101,3 +101,47 @@ Layer 3: captain_announcements.mp3      (at natural intervals)
 - Ambiance sourcing: 5 min
 - Compilation: 10 min
 - QA: 5 min
+
+## Preview strategy (before full render)
+
+Don't render the full 8-hour video first. Preview in stages:
+
+### 1. Audio preview (2 minutes)
+- Generate 1-2 announcements with TTS
+- Layer with cabin ambiance
+- Listen for 2 minutes
+- Check: voice sounds right? Announcements sound natural?
+
+### 2. Visual preview (1 frame)
+- Generate cabin image with Flux
+- Overlay flight map at specific timestamp (e.g. mid-flight over Atlantic)
+- Export as single image
+- Check: does it look like a real seat-back screen?
+
+### 3. Announcements preview (2 minutes)
+- Play all announcements in sequence (no ambiance)
+- Check: timing feels right? No gaps? No overlaps?
+- Check: each announcement sounds different from the last?
+
+### 4. Full assembly preview (10 minutes)
+- Assemble 10-minute chunk (takeoff → cruise start)
+- Check: all layers work together?
+- Check: transitions smooth?
+- Check: overall vibe is right?
+
+### 5. Then render full video
+- Only after all previews pass
+- Use FFmpeg for final assembly
+- Export as MP4 (H.264, AAC audio)
+
+## Per-video uniqueness
+
+Each video should feel different even if the format is the same:
+
+1. **Different cabin photos** — each airline/class gets its own image
+2. **Different announcement timing** — BA has more announcements than Ryanair
+3. **Different ambiance** — BA is quieter, Ryanair has louder engine
+4. **Different turbulence patterns** — some flights are smooth, some bumpy
+5. **Different time of day** — daytime flights vs night flights (different window light)
+6. **Different route visuals** — Atlantic crossing vs Pacific crossing (different colors on map)
+7. **Different voice personality** — BA captain is warm, Ryanair is direct, JAL is formal
