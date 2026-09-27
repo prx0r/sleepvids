@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-09-27",
+  "title": "The Silence Channel — Ultimate Sleep Content",
+
+  "concept": "That awkward silence after X — 8 hours of black screen and silence. The title IS the content. The video is nothing.",
+
+  "validated_by": {
+    "black_screen_guy": {
+      "subscribers": 65000,
+      "total_views": "150 million",
+      "best_video": "24 hours + of pure black screen in HD!",
+      "best_video_views": "40.2 million"
+    },
+    "verge_article": "The odd appeal of absurdly long YouTube videos that play nothing on purpose"
+  },
+
+  "titles": [
+    "That Awkward Silence After You Say 'I Love You' First — 8 Hours",
+    "That Awkward Silence After Someone Farted in the Lift — 8 Hours",
+    "That Awkward Silence After You Wave at Someone Who Wasn't Waving at You — 8 Hours",
+    "That Awkward Silence After You Call the Teacher 'Mom' — 8 Hours",
+    "That Awkward Silence After You Send a Text to the Wrong Person — 8 Hours",
+    "That Awkward Silence After You Reply 'You Too' to 'Enjoy Your Meal' — 8 Hours",
+    "That Awkward Silence After You Accidentally Like Someone's Old Instagram Post — 8 Hours",
+    "That Awkward Silence After You Say 'See You Tomorrow' to the Cashier — 8 Hours",
+    "That Awkward Silence After You Walk Into the Wrong Bathroom — 8 Hours",
+    "That Awkward Silence After You Reply 'Happy Birthday' to the Wrong Person — 8 Hours",
+    "That Awkward Silence After You're the Last One to Leave the Party — 8 Hours",
+    "That Awkward Silence After You Realize You've Been Talking to a Mannequin — 8 Hours"
+  ],
+
+  "production": {
+    "video": "Black screen (literally nothing)",
+    "audio": "Silence (literally nothing)",
+    "duration": "8 hours",
+    "time_to_produce": "5 minutes"
+  },
+
+  "seo": {
+    "title_formula": "That Awkward Silence After [Moment] — 8 Hours",
+    "description": "8 hours of black screen and silence. The awkwardness continues.",
+    "tags": ["silence", "black screen", "sleep", "awkward", "8 hours", "black screen sleep"]
+  }
+}

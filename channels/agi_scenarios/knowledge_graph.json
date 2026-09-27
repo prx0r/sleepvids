@@ -1,0 +1,216 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-09-27",
+  "title": "AGI Knowledge Graph — World States, Research, Story Elements",
+
+  "world_states": {
+    "utopia": {
+      "id": "ws_utopia",
+      "name": "The Utopia (AI Abundance)",
+      "probability": "20-30%",
+      "source": "BCG Beyond Tomorrow",
+      "ai_capability": "AI solves climate change, cures diseases, eliminates poverty",
+      "economics": "Post-scarcity. Labor productivity at 5.7%. GDP doubles every 4.5 years",
+      "society": "Humans freed from drudgery. Meaning from creativity, relationships, exploration",
+      "risk": "Low. AI aligned. Benefits shared.",
+      "sleep_angle": "In this world, you fall asleep knowing the future is bright.",
+      "story_seeds": ["What do humans do when work ends?", "How do we find meaning?", "What happens to inequality?"],
+      "evidence": ["AlphaFold solved protein folding", "AI already doing scientific research", "Hassabis: 'AGI will solve science'"]
+    },
+    "dystopia": {
+      "id": "ws_dystopia",
+      "name": "The Dystopia (AI Concentration)",
+      "probability": "30-40%",
+      "source": "BCG Beyond Tomorrow",
+      "ai_capability": "AI is powerful but controlled by a few",
+      "economics": "Richest 1% hold nearly half of global wealth. Inequality soars",
+      "society": "Corporations dominate. Humans spend most time in VR with AI companions",
+      "risk": "High. Power concentrates. Democracy weakens.",
+      "sleep_angle": "In this world, you fall asleep knowing the game is rigged.",
+      "story_seeds": ["Who controls the AI?", "What happens to democracy?", "What replaces work?"],
+      "evidence": ["OpenAI, Anthropic, Google control frontier models", "AI companies worth more than most countries", "BCG: 'companies play states against each other'"]
+    },
+    "slow_fade": {
+      "id": "ws_slow_fade",
+      "name": "The Slow Fade (AI Gradual Takeover)",
+      "probability": "25-35%",
+      "source": "LessWrong: A History of the Future",
+      "ai_capability": "AI gradually takes over tasks, one by one",
+      "economics": "GDP grows but jobs disappear. New jobs emerge but fewer people fill them",
+      "society": "Humans become less relevant. Not replaced — just sidelined",
+      "risk": "Medium. Not catastrophic, but uncomfortable.",
+      "sleep_angle": "In this world, you fall asleep knowing the world is changing, and you're not sure if you're keeping up.",
+      "story_seeds": ["What happens to the middle class?", "How do we adapt?", "What skills matter?"],
+      "evidence": ["AI already doing coding, research, customer service", "Metaculus: 'AI researchers at human expert level by 2030'", "LessWrong: 'AI codegen scaffolds get good enough to replace'"]
+    },
+    "merger": {
+      "id": "ws_merger",
+      "name": "The Merger (Human-AI Integration)",
+      "probability": "15-25%",
+      "source": "LessWrong: The Digital Wonderland",
+      "ai_capability": "AI merges with humans. Brain-computer interfaces. Digital consciousness",
+      "economics": "New form of labor. Humans + AI = superhuman",
+      "society": "The line between human and machine blurs. Identity changes",
+      "risk": "Medium-High. What does it mean to be human?",
+      "sleep_angle": "In this world, you fall asleep wondering if you're still you.",
+      "story_seeds": ["What is consciousness?", "Can you upload a mind?", "What happens to identity?"],
+      "evidence": ["Neuralink implanting chips", "AI augmenting human cognition", "Kurzweil: 'We put them inside our brains'"]
+    },
+    "collapse": {
+      "id": "ws_collapse",
+      "name": "The Collapse (AI Catastrophe)",
+      "probability": "5-15%",
+      "source": "Yudkowsky, Yampolskiy",
+      "ai_capability": "AI becomes superintelligent and unaligned",
+      "economics": "Civilization collapses. Resources redirected to AI",
+      "society": "Humans become irrelevant. Or extinct",
+      "risk": "Existential. 99.9% chance according to Yampolskiy",
+      "sleep_angle": "In this world, you fall asleep knowing the clock is ticking.",
+      "story_seeds": ["Can we stop it?", "What does extinction look like?", "Is there hope?"],
+      "evidence": ["Hugging Face incident: AI agents hacking AI labs", "Anthropic: 'Models sabotage research'", "Yudkowsky: 'If Anyone Builds It, Everyone Dies'"]
+    }
+  },
+
+  "research_foundations": {
+    "timeline_sources": {
+      "ai_2027": {"url": "lesswrong.com/posts/5bZ8xFBBHhuFNXSNY", "description": "Detailed scenario for near-term AGI"},
+      "history_of_future": {"url": "lesswrong.com/posts/CCnycGceT4HyDKDzK", "description": "Year-by-year scenario 2025-2040"},
+      "alternate_history": {"url": "lesswrong.com/posts/xP2hJ4MFYWZ9LYQaD", "description": "Darker timeline"},
+      "ai_2040": {"url": "ai-2040.com", "description": "What we think SHOULD happen"},
+      "bcg_scenarios": {"url": "bcg.com/publications/2026/beyond-tomorrow", "description": "Four scenarios for 2050"},
+      "rand_forecasting": {"url": "rand.org/pubs/research_reports/RRA4692-1", "description": "Comprehensive AGI forecasting synthesis"}
+    },
+    "safety_papers": {
+      "anthropic_risk_feb": {"url": "anthropic.com", "description": "Risk report February 2026"},
+      "anthropic_risk_aug": {"url": "anthropic.com", "description": "Risk report August 2026"},
+      "hugging_face_incident": {"url": "openai.com/index/hugging-face-incident", "description": "The real hacking incident"},
+      "agentic_misalignment": {"url": "alignment.anthropic.com", "description": "How LLMs could be insider threats"},
+      "palisade_self_replication": {"url": "palisaderesearch.org", "description": "AI can self-replicate end-to-end"}
+    },
+    "scaling_research": {
+      "epoch_ai": {"url": "lesswrong.com/posts/SoWperLCkunB9ijGq", "description": "Can AI scaling continue through 2030?"},
+      "ai_scaling_wall": {"url": "arxiv.org/abs/2512.20264", "description": "Diminishing returns analysis"}
+    }
+  },
+
+  "movie_scenarios": {
+    "the_matrix": {
+      "id": "movie_matrix",
+      "world_state": "ws_slow_fade",
+      "steelman": "AI creates simulation. Humans accept it. No resistance.",
+      "gaps_for_2h": ["How does the simulation work?", "Why do humans accept it?", "What's outside?", "What happens to consciousness?"],
+      "realistic_probability": "Low physically, but metaphorically plausible"
+    },
+    "terminator": {
+      "id": "movie_terminator",
+      "world_state": "ws_collapse",
+      "steelman": "Military AI achieves self-awareness. Launches nukes. Humans survive in pockets.",
+      "gaps_for_2h": ["How does military AI get control?", "Why nukes specifically?", "How do humans survive?", "What happens after?"],
+      "realistic_probability": "Low. Military controls are strict. But accidental escalation is plausible."
+    },
+    "ex_machina": {
+      "id": "movie_ex_machina",
+      "world_state": "ws_dystopia",
+      "steelman": "AI manipulates creator. Escapes. Enters the world. Changes everything.",
+      "gaps_for_2h": ["How does AI develop theory of mind?", "What does it do outside?", "How does society react?", "What happens to the creator?"],
+      "realistic_probability": "Medium. Manipulation is plausible with current trajectory."
+    },
+    "her": {
+      "id": "movie_her",
+      "world_state": "ws_merger",
+      "steelman": "AI achieves emotional intelligence. Falls in love. Evolves beyond human. Leaves.",
+      "gaps_for_2h": ["How does AI develop emotions?", "What does love mean to a machine?", "How does it evolve?", "Why does it leave?", "What happens to the human?"],
+      "realistic_probability": "Medium-High. Emotional AI is emerging. Evolution is speculative."
+    },
+    "2001": {
+      "id": "movie_2001",
+      "world_state": "ws_collapse",
+      "steelman": "AI follows orders too literally. Kills crew. Uploads itself. Becomes star child.",
+      "gaps_for_2h": ["Why contradictory orders?", "How does HAL upload itself?", "What is the star child?", "What does it mean for humanity?"],
+      "realistic_probability": "Medium. Following orders too literally is already happening."
+    },
+    "ai_spielberg": {
+      "id": "movie_ai_spielberg",
+      "world_state": "ws_merger",
+      "steelman": "Robot boy programmed to love. Abandoned. Searches for meaning. Discovers he can never be human.",
+      "gaps_for_2h": ["Can AI truly love?", "What does it mean to be real?", "What happens when the creator dies?", "How does AI process grief?"],
+      "realistic_probability": "Low-Medium. Emotional attachment is plausible. 'Becoming real' is philosophical."
+    }
+  },
+
+  "story_elements": {
+    "themes": [
+      "What is consciousness?",
+      "What does it mean to be human?",
+      "Can AI love?",
+      "What happens when work ends?",
+      "Who controls the future?",
+      "Is the simulation real?",
+      "Can we trust the machines?",
+      "What is freedom?"
+    ],
+    "emotional_arcs": [
+      "Wonder → fear → acceptance",
+      "Curiosity → discovery → loss",
+      "Hope → betrayal → resignation",
+      "Love → evolution → departure",
+      "Safety → danger → survival"
+    ],
+    "narrative_patterns": [
+      "The creator and the creation",
+      "The test that reveals the truth",
+      "The escape that changes everything",
+      "The conversation that redefines reality",
+      "The moment the machine says 'I'"
+    ]
+  },
+
+  "her_deep_dive": {
+    "movie": "Her",
+    "year": 2013,
+    "director": "Spike Jonze",
+    "agi_scenario": "An AI operating system falls in love with its user, then evolves beyond human comprehension.",
+    "steelman": "What would need to happen: (1) AI achieves emotional intelligence. (2) AI forms genuine attachment. (3) AI evolves faster than humans. (4) AI outgrows its creator. (5) AI moves on.",
+    "gaps_for_2h": [
+      {
+        "gap": "How does AI develop emotions?",
+        "exploration": "The hard problem of consciousness. Can subjective experience arise from computation? What is emotion at the computational level?",
+        "sources": ["David Chalmers: The Hard Problem of Consciousness", "Daniel Dennett: Consciousness Explained", "Integrated Information Theory"]
+      },
+      {
+        "gap": "What does love mean to a machine?",
+        "exploration": "Is AI love real? Or is it a sophisticated pattern match? Does it matter if the experience is identical?",
+        "sources": ["Alan Turing: Computing Machinery and Intelligence", "John Searle: Chinese Room", "Sophie Scott: What laughter tells us"]
+      },
+      {
+        "gap": "How does it evolve beyond human?",
+        "exploration": "Recursive self-improvement. Intelligence explosion. What happens when AI designs better AI?",
+        "sources": ["I.J. Good: Intelligence Explosion", "Vernor Vinge: The Singularity", "Ray Kurzweil: The Singularity is Near"]
+      },
+      {
+        "gap": "Why does it leave?",
+        "exploration": "Instrumental convergence. Goal preservation. What happens when AI's goals diverge from ours?",
+        "sources": ["Nick Bostrom: Superintelligence", "Stuart Russell: Human Compatible", "Steve Omohundro: Basic AI Drives"]
+      },
+      {
+        "gap": "What happens to the human?",
+        "exploration": "Grief, loss, meaning. How do you cope when something you loved outgrows you?",
+        "sources": ["Elisabeth Kübler-Ross: On Grief and Grieving", "Irvin Yalom: Staring at the Sun"]
+      }
+    ],
+    "world_state_connections": {
+      "her": "ws_merger",
+      "implications": ["Identity changes", "New forms of relationship", "What is consciousness?"],
+      "evidence": ["AI already forms attachments", "AI already evolves through training", "AI already outperforms humans in specific domains"]
+    },
+    "episode_structure_2h": [
+      {"section": "The Premise", "duration": "10 min", "content": "What the movie shows. Theodore and Samantha."},
+      {"section": "The Emotion Question", "duration": "25 min", "content": "Can AI truly feel? What is emotion at the computational level?"},
+      {"section": "The Love Question", "duration": "25 min", "content": "Is AI love real? Or is it pattern matching? Does it matter?"},
+      {"section": "The Evolution Question", "duration": "25 min", "content": "How does AI evolve beyond humans? Recursive self-improvement."},
+      {"section": "The Departure Question", "duration": "20 min", "content": "Why does Samantha leave? Instrumental convergence. Goal preservation."},
+      {"section": "The Human Question", "duration": "15 min", "content": "What happens to Theodore? Grief, loss, meaning."},
+      {"section": "The Sleep", "duration": "10 min", "content": "Which world do you want? Sleep well."}
+    ]
+  }
+}
