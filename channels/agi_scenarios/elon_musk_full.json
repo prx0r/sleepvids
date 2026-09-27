@@ -1,0 +1,132 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-09-27",
+  "title": "Elon Musk's AGI — The Man Who Builds Rockets and Warns About AI",
+
+  "principle": "Entertainment, not claims. This is hypothetical fiction grounded in research.",
+
+  "visionary": {
+    "id": "visionary_musk",
+    "name": "Elon Musk",
+    "role": "CEO, Tesla, SpaceX, xAI",
+    "vision": "AGI is imminent. Build it yourself to make it safe. Open source as safety.",
+    "timeline": "2026 (Grok 5), 2030 (Mars colony)",
+    "key_quotes": [
+      "AGI is significantly higher risk than nuclear weapons.",
+      "I now think xAI has a chance of reaching AGI with Grok 5. Never thought that before.",
+      "Grok will inherit your thoughts and ideas.",
+      "The safest way to build AI is to make one that is maximally curious and truth-seeking.",
+      "I hope to die on Mars — but not by impact."
+    ],
+    "approach": "Build Grok to AGI. Open source. Neuralink for human-AI merger. Optimus for physical labor. SpaceX for backup.",
+    "risk_view": "Existential. But building it yourself is safer than letting others build it.",
+    "episode_hook": "The man who builds rockets to escape Earth and AI that might destroy it."
+  },
+
+  "episode_structure_2h": [
+    {
+      "section": "The Person",
+      "duration": "15 min",
+      "content": "Emerald mine. Canada. Zip2. PayPal. The emerald mine story. The immigrant who became the richest person on Earth.",
+      "subsections": [
+        "Born in Pretoria, South Africa (1971)",
+        "Emigrated to Canada at 17",
+        "Zip2 → PayPal → $180M at 31",
+        "The emerald mine myth vs reality",
+        "The work ethic: 100-hour weeks"
+      ]
+    },
+    {
+      "section": "The Vision",
+      "duration": "20 min",
+      "content": "Mars. Robots. Brain chips. AI. The interconnected vision.",
+      "subsections": [
+        "SpaceX: Make humanity multiplanetary",
+        "Tesla: Sustainable energy + Optimus robots",
+        "Neuralink: Human-AI merger",
+        "xAI: Build the safest AGI",
+        "How they all connect: AI runs the robots, robots build Mars, brain chips merge us with AI"
+      ]
+    },
+    {
+      "section": "The Paradox",
+      "duration": "20 min",
+      "content": "He warns about AI more than anyone. Then he builds more AI than anyone.",
+      "subsections": [
+        "2014: 'AI is potentially more dangerous than nukes'",
+        "2015: Co-founds OpenAI for safety",
+        "2018: Leaves OpenAI, founds xAI",
+        "2024: Sues OpenAI for 'stealing a charity'",
+        "2025: 'Grok 5 might be AGI'",
+        "2026: 'AGI is significantly higher risk than nuclear weapons' — then builds it anyway"
+      ]
+    },
+    {
+      "section": "The Companies",
+      "duration": "25 min",
+      "content": "Deep dive: xAI, Neuralink, Tesla, SpaceX. How they connect.",
+      "subsections": [
+        "xAI: Grok 5 = AGI target, Colossus 200K GPUs → 1M",
+        "Neuralink: 12 patients, 1,000 implants by 2026, automated surgery",
+        "Tesla: Optimus robots, 100K/month by 2031, FSD autonomous driving",
+        "SpaceX: Mars lander 2028, humans 2033, orbital AI data centers",
+        "SpaceX+xAI merger: AI trained on rocket data, 100K satellites"
+      ]
+    },
+    {
+      "section": "The Timeline",
+      "duration": "15 min",
+      "content": "2026-2030 milestones.",
+      "subsections": [
+        "2026: Grok 5 (AGI target), Neuralink 1,000 implants, Mars lander launched",
+        "2027: AI satellites launch, Optimus production at scale",
+        "2028: Mars lander arrives, humans possibly by 2033",
+        "2030: Self-sustaining Mars colony (Musk's goal)"
+      ]
+    },
+    {
+      "section": "The World State",
+      "duration": "15 min",
+      "content": "Day in the life: billionaire, engineer,普通人.",
+      "subsections": [
+        "The Billionaire: AI schedules day, Tesla drives itself, Optimus builds Optimus, Grok tweets",
+        "The Engineer: Grok is smarter than them now. They're not sure if they still have a job.",
+        "The普通人: Car drives itself, phone answers questions, kid asks if AI can do homework"
+      ]
+    },
+    {
+      "section": "The Sleep",
+      "duration": "10 min",
+      "content": "The paradox. Sleep well.",
+      "subsections": [
+        "The man who builds rockets to escape Earth",
+        "The man who builds AI that might destroy it",
+        "Both are about survival",
+        "Both are about the future",
+        "Both keep him up at night"
+      ]
+    }
+  ],
+
+  "sources": {
+    "primary": [
+      "x.com/elonmusk — Direct quotes",
+      "xAI announcements — Grok roadmap",
+      "Neuralink.com — Implant status",
+      "SpaceX.com — Mars timeline",
+      "Tesla.com — Optimus status"
+    ],
+    "secondary": [
+      "Business Insider — xAI all-hands meeting",
+      "TechCrunch — SpaceX+xAI merger",
+      "Fortune — Musk's compensation package",
+      "NYT — Musk vs OpenAI trial",
+      "Wikipedia — Elon Musk, SpaceX, Neuralink"
+    ],
+    "research": [
+      "Skynet Countdown — AGI predictions",
+      "Metaculus — AGI forecasts",
+      "RAND — AGI forecasting synthesis"
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-09-27",
+  "title": "Visionary Episode Template — Graph Structure",
+
+  "template": {
+    "description": "Copy this template for each visionary. Fill in the fields. The graph structure is identical for all.",
+    "fields": {
+      "id": "visionary_{name}",
+      "name": "Full name",
+      "role": "Company + position",
+      "vision": "One sentence: what they believe about AGI",
+      "timeline": "When they think it arrives",
+      "key_quotes": ["3-5 direct quotes from interviews/tweets"],
+      "approach": "How they're building/preparing for it",
+      "risk_view": "What they think the risk is",
+      "episode_hook": "The one-liner that makes you click",
+      "sources": ["URLs to primary sources"]
+    }
+  },
+
+  "research_workflow": {
+    "step_1": {
+      "name": "Find the person",
+      "action": "Search for their name + AGI + 2026",
+      "sources": ["Google", "X/Twitter", "YouTube interviews", "Podcasts"],
+      "output": "Basic bio, role, company"
+    },
+    "step_2": {
+      "name": "Find their quotes",
+      "action": "Search for direct quotes about AGI",
+      "sources": ["X/Twitter", "Interview transcripts", "Blog posts", "Press releases"],
+      "output": "3-5 key quotes with context"
+    },
+    "step_3": {
+      "name": "Find their timeline",
+      "action": "When do they think AGI arrives?",
+      "sources": ["Interviews", "Blog posts", "Conference talks"],
+      "output": "Specific year or range"
+    },
+    "step_4": {
+      "name": "Find their approach",
+      "action": "How are they building/preparing?",
+      "sources": ["Company website", "Blog posts", "Investor presentations"],
+      "output": "Technical approach, strategy"
+    },
+    "step_5": {
+      "name": "Find the counter",
+      "action": "What contradicts their view?",
+      "sources": ["Other visionaries", "Research papers", "Skeptics"],
+      "output": "Opposing evidence"
+    },
+    "step_6": {
+      "name": "Find the niche details",
+      "action": "What weird specifics make it interesting?",
+      "sources": ["Deep dives", "Industry reports", "Blogs"],
+      "output": "10+ interesting details"
+    },
+    "step_7": {
+      "name": "Find the day-in-the-life",
+      "action": "What does it FEEL like to live in their world?",
+      "sources": ["Imagination + research"],
+      "output": "3 perspectives (billionaire, engineer,普通人)"
+    },
+    "step_8": {
+      "name": "Build the 2-hour structure",
+      "action": "Map the sections, timing, content",
+      "sources": ["All above"],
+      "output": "7-section episode plan"
+    }
+  },
+
+  "episode_structure": {
+    "section_1": {
+      "name": "The Person",
+      "duration": "15 min",
+      "content": "Who are they? Background, career, journey."
+    },
+    "section_2": {
+      "name": "The Vision",
+      "duration": "20 min",
+      "content": "What do they believe about AGI? In their words."
+    },
+    "section_3": {
+      "name": "The Paradox",
+      "duration": "20 min",
+      "content": "What's contradictory about their position?"
+    },
+    "section_4": {
+      "name": "The Companies",
+      "duration": "25 min",
+      "content": "Deep dive into their ventures and how they connect."
+    },
+    "section_5": {
+      "name": "The Timeline",
+      "duration": "15 min",
+      "content": "When does their vision become reality?"
+    },
+    "section_6": {
+      "name": "The World State",
+      "duration": "15 min",
+      "content": "Day in the life: billionaire, engineer,普通人."
+    },
+    "section_7": {
+      "name": "The Sleep",
+      "duration": "10 min",
+      "content": "Circle back, comfort. Sleep well."
+    }
+  }
+}
