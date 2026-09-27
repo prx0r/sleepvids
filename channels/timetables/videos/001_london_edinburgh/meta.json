@@ -1,0 +1,41 @@
+{
+  "video_id": "video:timetables:001",
+  "channel": "channel:timetables",
+  "title": "London Kings Cross to Edinburgh — LNER Timetable for Sleep | 8 Hours",
+  "duration_target_minutes": 480,
+  "word_target": 50400,
+  "narration_wpm": 105,
+  "voice": "V10_Companion",
+  "pace": -0.3,
+  "engine": "E5b",
+  "shelf": "MIND",
+  "format": "timetable_reading",
+  "status": "template",
+
+  "route": {
+    "from": "London Kings Cross",
+    "to": "Edinburgh Waverley",
+    "operator": "LNER",
+    "line": "East Coast Main Line",
+    "distance_miles": 393,
+    "typical_journey": "4h 20m - 4h 40m",
+    "departures_per_day": "~30"
+  },
+
+  "script_template": {
+    "intro": "The {day} {date} timetable for {operator} services from London Kings Cross to Edinburgh Waverley via the East Coast Main Line. Distance: three hundred and ninety-three miles. Typical journey time: four hours twenty minutes to four hours forty minutes.",
+
+    "departure_template": "The {time} {service_name} service to Edinburgh Waverley. Calling at: {calling_points}. This service is operated by {operator} {train_type}. Expected arrival Edinburgh Waverley: {arrival_time}. Journey time: {journey_time}.",
+
+    "calling_points_template": "{station_name}, {arrival_time}, platform {platform}. {station_name}, {arrival_time}, platform {platform}. {station_name}, {arrival_time}, platform {platform}.",
+
+    "closing": "That completes the {day} timetable for {operator} services from London Kings Cross to Edinburgh Waverley. The first departure tomorrow morning is at {first_departure}. Sleep well."
+  },
+
+  "seo": {
+    "title_formula": "London to Edinburgh Timetable — LNER Train Departures for Sleep | {Duration}",
+    "primary_keyword": "timetable sleep",
+    "secondary_keywords": ["train timetable sleep", "LNER timetable", "London to Edinburgh train", "departure board sleep"],
+    "tags": ["timetable", "train", "sleep", "LNER", "London", "Edinburgh", "departure board", "rail", "ASMR", "relaxing", "transport", "East Coast Main Line"]
+  }
+}

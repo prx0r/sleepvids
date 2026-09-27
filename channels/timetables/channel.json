@@ -1,0 +1,61 @@
+{
+  "channel": "timetables",
+  "title": "Timetables for Sleep",
+  "description": "Reading train, bus, and transport timetables aloud for sleep. Monotonous data, soothing delivery. The departure board as lullaby.",
+
+  "engine": "E5b",
+  "shelf": "MIND",
+
+  "format": {
+    "type": "timetable_reading",
+    "duration_target_minutes": 60,
+    "structure": [
+      "1. Route introduction — where we're going, which line",
+      "2. Timetable reading — departures, platforms, calling points, arrival times",
+      "3. Variations — express vs stopping, different operators",
+      "4. Closing — 'sleep well, next train departs at...'"
+    ]
+  },
+
+  "data_sources": [
+    {"name": "UK National Rail", "url": "https://www.nationalrail.co.uk/developers", "license": "CC-BY-2.0", "format": "PDF timetable + API"},
+    {"name": "data.gov.uk Rail Timetables", "url": "https://www.data.gov.uk/dataset/4d209708-c55e-4cef-8355-b2c66a66ae4c/rail-timetables", "license": "CC-BY-2.0", "format": "CSV weekly updates"},
+    {"name": "National Rail Darwin API", "url": "https://www.nationalrail.co.uk/developers", "license": "free registration", "format": "XML/REST API"},
+    {"name": "Deutsche Bahn", "url": "https://data.deutschebahn.com/", "license": "free", "format": "GTFS"},
+    {"name": "JR Japan", "url": "https://www.jreast.co.jp/english/", "license": "check", "format": "PDF timetable"},
+    {"name": "TfL (London)", "url": "https://api.tfl.gov.uk/", "license": "open data", "format": "JSON API"}
+  ],
+
+  "audio_style": {
+    "narration": "V10 Companion or V03 Lecturer",
+    "ambient": "Train sounds (rain on window, wheel rhythm, distant whistle)",
+    "pacing": "Very slow. Each departure gets 10-15 seconds. Let the numbers breathe.",
+    "visual": "Black screen OR departure board text scrolling slowly"
+  },
+
+  "seo": {
+    "title_formula": "{Route} Timetable — Train Departures for Sleep | {Duration}",
+    "primary_keyword": "timetable sleep",
+    "tags": ["timetable", "train", "sleep", "departure board", "rail", "transport", "ASMR", "relaxing"]
+  },
+
+  "examples": [
+    {"route": "London Kings Cross to Edinburgh", "operator": "LNER", "departures": "~30 per day", "duration": "4h 20m"},
+    {"route": "London Paddington to Bristol", "operator": "GWR", "departures": "~25 per day", "duration": "1h 40m"},
+    {"route": "Manchester to London Euston", "operator": "Avanti West Coast", "departures": "~20 per day", "duration": "2h 10m"},
+    {"route": "Tokyo to Osaka (Shinkansen)", "operator": "JR Central", "departures": "~50 per day", "duration": "2h 30m"},
+    {"route": "Berlin to Munich", "operator": "Deutsche Bahn ICE", "departures": "~30 per day", "duration": "4h 00m"},
+    {"route": "Paris to Lyon (TGV)", "operator": "SNCF", "departures": "~25 per day", "duration": "2h 00m"}
+  ],
+
+  "production_notes": {
+    "effort": "1 — lowest possible",
+    "scripting": "none — read timetable data directly",
+    "data_acquisition": "download PDF from nationalrail.co.uk or scrape API",
+    " tts": "edge-tts, V10 Companion voice, pace -30%",
+    "visual": "black screen with scrolling departure text, OR just black",
+    "ambient": "optional train sounds layered underneath",
+    "time_to_produce": "~30 minutes per video",
+    "content_per_video": "all departures on one route for one day = 8+ hours"
+  }
+}

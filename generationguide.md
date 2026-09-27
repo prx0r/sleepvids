@@ -63,8 +63,17 @@ Human faceless creators get swept (300M-view lore channel, no AI, hit twice). Ap
 | Channel | Voice | Visual | Format |
 |---------|-------|--------|--------|
 | Etymology | V03 Lecturer | Black screen | 60-120 min essay |
+| Timetables | V10 Companion | Departure board text | 60-480 min reading |
 | Interesting Tribes | V01 Sage or V07 Navigator | Field footage/ambient | 45-60 min profile |
 | (future) | (varies) | (varies) | (varies) |
+
+### Lowest-effort channel: Timetables
+- **Zero scripting** — read public timetable data directly
+- **Public data** — UK National Rail (CC-BY-2.0), Deutsche Bahn, JR
+- **35 minutes per video** — download PDF, extract departures, TTS, compile
+- **Infinite content** — every route, every day, every country
+- **Proven format** — train sleep videos already get millions of views
+- **Process notes:** `/root/sleepvids/channels/timetables/PROCESS.md`
 
 ### Receipts to keep
 - `/sections/` — proves human wrote each section
