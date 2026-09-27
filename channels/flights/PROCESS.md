@@ -32,12 +32,21 @@ The captain's voice is warm, authoritative, reassuring. The voice that says "eve
 ### Landing
 "Ladies and gentlemen, welcome to Tokyo Narita. The local time is 6:28 PM. Please remain seated with your seatbelt fastened until the aircraft has come to a complete stop and the seatbelt sign has been turned off. On behalf of Japan Airlines and your captain, thank you for flying with us."
 
-## Visuals
-- Stock footage: airplane exterior (takeoff, cruising, landing)
-- Interior: cabin shots, window views, seatbelt signs
-- Airport: gate announcements, terminal ambiance
-- Sync: boarding announcement matches boarding footage
-- Source: Pexels, Pixabay (CC0), or self-shot
+## Visuals: the flight map
+The in-flight entertainment map. The one that shows your plane crossing the ocean. That's the visual. It's already calming. It's already hypnotic. Everyone has stared at it on a long flight.
+
+- Source: screen recordings of flight tracker maps (FlightAware, Flightradar24)
+- Or: recreate the map animation (simple CSS: moving plane icon across route)
+- The map shows: current position, route line, altitude, speed, time remaining, destination
+- It moves slowly across the screen — perfect for sleep
+- Each announcement syncs with map updates: "We are now crossing the Atlantic" matches the plane icon over the ocean
+
+### Why this works
+- Everyone has stared at a flight map at 3am, exhausted, drifting off
+- The map is simple, repetitive, soothing
+- It moves at a predictable pace — no surprises
+- Combined with captain's voice + cabin hum = hypnotic
+- Can run for 12+ hours (long-haul routes)
 
 ## Audio layers
 - Layer 1: Cabin ambiance (engine hum, white noise)
