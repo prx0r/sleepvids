@@ -1,0 +1,38 @@
+{
+  "airline": "British Airways",
+  "captain_style": "Warm, measured, reassuring. British accent. Professional but not robotic.",
+  "announcements": {
+    "boarding": {
+      "template": "Good evening, ladies and gentlemen. This is your captain speaking. Welcome aboard British Airways flight {flight_number} to {destination}. We'll be departing from gate {gate} in approximately {minutes} minutes. The flight time to {destination} is approximately {flight_time}. We'll be cruising at an altitude of {altitude} feet. The weather in {destination} is {weather} with a temperature of {temp} degrees. Cabin crew, please prepare the cabin for departure.",
+      "timing": "After boarding, before pushback"
+    },
+    "pushback": {
+      "template": "Ladies and gentlemen, we are now ready for pushback. Please ensure your seatbelts are securely fastened and your tray tables are in the upright position. We'll be taxiing to runway {runway} for departure.",
+      "timing": "At pushback"
+    },
+    "takeoff": {
+      "template": "Cabin crew, seats for takeoff please.",
+      "timing": "During takeoff roll"
+    },
+    "cruise": {
+      "template": "Good evening, ladies and gentlemen. This is your captain speaking. We are currently cruising at an altitude of {altitude} feet. Our ground speed is approximately {speed} knots. The flight time remaining to {destination} is approximately {remaining_time}. We expect to arrive at {destination} at approximately {arrival_time} local time. The weather in {destination} is {weather} with a temperature of {temp} degrees Celsius. We'll keep you updated as we progress. For now, sit back, relax, and enjoy the flight.",
+      "timing": "30 minutes after takeoff"
+    },
+    "turbulence_light": {
+      "template": "Ladies and gentlemen, we may experience some light turbulence in the next few minutes. I've turned on the fasten seatbelt sign. Please return to your seats and ensure your seatbelt is securely fastened. We expect to be through this area shortly.",
+      "timing": "When turbulence forecast"
+    },
+    "turbulence_clear": {
+      "template": "Ladies and gentlemen, we have now passed through the area of turbulence. You may move freely about the cabin. Thank you for your patience.",
+      "timing": "After turbulence clears"
+    },
+    "descent": {
+      "template": "Ladies and gentlemen, this is your captain speaking. We are now beginning our descent into {destination}. Please ensure your seatbelt is securely fastened and your seat is in the upright position. We expect to land at approximately {arrival_time} local time. On behalf of British Airways and your entire crew, thank you for flying with us today.",
+      "timing": "20 minutes before landing"
+    },
+    "landing": {
+      "template": "Ladies and gentlemen, welcome to {destination}. The local time is {local_time}. Please remain seated with your seatbelt fastened until the aircraft has come to a complete stop and the seatbelt sign has been turned off. On behalf of British Airways and your captain, thank you for flying with us. We look forward to welcoming you aboard again soon. Good night.",
+      "timing": "After landing, at the gate"
+    }
+  }
+}

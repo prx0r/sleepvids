@@ -1,0 +1,67 @@
+{
+  "video_id": "video:longhaul:001_ba_lhr_jfk_business",
+  "channel": "channel:longhaul",
+  "title": "Long Haul: British Airways BA117 London to New York — Club World for Sleep | 8 Hours",
+  "duration_target_minutes": 480,
+  "airline": "British Airways",
+  "flight": "BA117",
+  "route": "LHR → JFK",
+  "cabin_class": "Club World (Business)",
+  "aircraft": "Boeing 777-300ER",
+  "status": "template",
+
+  "structure": [
+    {"time": "0:00-2:00", "event": "Boarding", "announcement": "captain_welcome", "visual": "cabin_empty"},
+    {"time": "2:00-4:00", "event": "Pre-departure", "announcement": "safety_briefing", "visual": "cabin_empty"},
+    {"time": "4:00-6:00", "event": "Pushback", "announcement": "pushback", "visual": "cabin_static"},
+    {"time": "6:00-10:00", "event": "Takeoff", "announcement": "takeoff", "visual": "cabin_static"},
+    {"time": "10:00-15:00", "event": "Climb", "announcement": "none", "visual": "flightmap_climbing"},
+    {"time": "15:00-30:00", "event": "Cruise start", "announcement": "cruise", "visual": "flightmap_cruising"},
+    {"time": "30:00-120:00", "event": "Cruise", "announcement": "none", "visual": "flightmap_cruising"},
+    {"time": "120:00-180:00", "event": "Mid-flight", "announcement": "cruise_update", "visual": "flightmap_cruising"},
+    {"time": "180:00-240:00", "event": "Turbulence (optional)", "announcement": "turbulence_light", "visual": "flightmap_turbulence"},
+    {"time": "240:00-360:00", "event": "Cruise continued", "announcement": "none", "visual": "flightmap_cruising"},
+    {"time": "360:00-400:00", "event": "Descent", "announcement": "descent", "visual": "flightmap_descent"},
+    {"time": "400:00-440:00", "event": "Approach", "announcement": "none", "visual": "flightmap_approach"},
+    {"time": "440:00-460:00", "event": "Landing", "announcement": "landing", "visual": "flightmap_landed"},
+    {"time": "460:00-480:00", "event": "Taxi to gate", "announcement": "none", "visual": "cabin_static"}
+  ],
+
+  "announcements": [
+    {
+      "time": "0:30",
+      "speaker": "captain",
+      "text": "Good evening, ladies and gentlemen. This is your captain speaking. Welcome aboard British Airways flight BA117 to New York JFK. We'll be departing from gate B32 in approximately fifteen minutes. The flight time to New York is approximately seven hours and forty-five minutes. We'll be cruising at an altitude of thirty-five thousand feet. The weather in New York is clear with a temperature of twelve degrees Celsius. Cabin crew, please prepare the cabin for departure."
+    },
+    {
+      "time": "4:00",
+      "speaker": "captain",
+      "text": "Ladies and gentlemen, we are now ready for pushback. Please ensure your seatbelts are securely fastened and your tray tables are in the upright position. We'll be taxiing to runway twenty-seven Left for departure."
+    },
+    {
+      "time": "6:00",
+      "speaker": "captain",
+      "text": "Cabin crew, seats for takeoff please."
+    },
+    {
+      "time": "15:00",
+      "speaker": "captain",
+      "text": "Good evening, ladies and gentlemen. This is your captain speaking. We are currently cruising at an altitude of thirty-five thousand feet. Our ground speed is approximately four hundred and ninety knots. The flight time remaining to New York is approximately six hours and thirty minutes. We expect to arrive at JFK at approximately eleven forty-five PM local time. The weather in New York is clear with a temperature of twelve degrees Celsius. We'll keep you updated as we progress. For now, sit back, relax, and enjoy the flight."
+    },
+    {
+      "time": "240:00",
+      "speaker": "captain",
+      "text": "Ladies and gentlemen, we may experience some light turbulence in the next few minutes. I've turned on the fasten seatbelt sign. Please return to your seats and ensure your seatbelt is securely fastened. We expect to be through this area shortly."
+    },
+    {
+      "time": "400:00",
+      "speaker": "captain",
+      "text": "Ladies and gentlemen, this is your captain speaking. We are now beginning our descent into New York JFK. Please ensure your seatbelt is securely fastened and your seat is in the upright position. We expect to land at approximately eleven forty-five PM local time. On behalf of British Airways and your entire crew, thank you for flying with us today."
+    },
+    {
+      "time": "460:00",
+      "speaker": "captain",
+      "text": "Ladies and gentlemen, welcome to New York. The local time is eleven forty-two PM. Please remain seated with your seatbelt fastened until the aircraft has come to a complete stop and the seatbelt sign has been turned off. On behalf of British Airways and your captain, thank you for flying with us. We look forward to welcoming you aboard again soon. Good night."
+    }
+  ]
+}

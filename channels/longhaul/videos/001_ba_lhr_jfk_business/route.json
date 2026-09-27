@@ -1,0 +1,72 @@
+{
+  "flight": "BA117",
+  "airline": "British Airways",
+  "aircraft": "Boeing 777-300ER",
+  "route": {
+    "departure": {
+      "airport": "London Heathrow",
+      "iata": "LHR",
+      "icao": "EGLL",
+      "lat": 51.4700,
+      "lon": -0.4543,
+      "timezone": "Europe/London",
+      "utc_offset": 0
+    },
+    "arrival": {
+      "airport": "New York JFK",
+      "iata": "JFK",
+      "icao": "KJFK",
+      "lat": 40.6413,
+      "lon": -73.7781,
+      "timezone": "America/New_York",
+      "utc_offset": -5
+    },
+    "distance_nm": 3010,
+    "distance_km": 5574,
+    "typical_flight_time": "7h 45m",
+    "typical_cruise_altitude": "35000",
+    "typical_cruise_speed_knots": 490,
+    "direction": "westbound"
+  },
+  "schedule": {
+    "departure_time_utc": "21:00",
+    "arrival_time_local": "23:45",
+    "departure_gate": "B32",
+    "departure_terminal": "5"
+  },
+  "cabin_classes": {
+    "economy": {
+      "name": "World Traveller",
+      "seats": 303,
+      "pitch_inches": 31,
+      "width_inches": 17.5,
+      "screen_size": "small"
+    },
+    "business": {
+      "name": "Club World",
+      "seats": 42,
+      "pitch_inches": 72,
+      "width_inches": 20,
+      "screen_size": "large"
+    },
+    "first": {
+      "name": "First",
+      "seats": 14,
+      "pitch_inches": 84,
+      "width_inches": 22,
+      "screen_size": "large"
+    }
+  },
+  "weather": {
+    "departure": {
+      "condition": "overcast",
+      "temp_celsius": 8,
+      "wind_knots": 12
+    },
+    "arrival": {
+      "condition": "clear",
+      "temp_celsius": 12,
+      "wind_knots": 8
+    }
+  }
+}
