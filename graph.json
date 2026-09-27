@@ -1,288 +1,231 @@
 {
   "version": "1.0.0",
   "updated": "2026-09-27",
-  "description": "sleepvids — video production graph. Every entity is a node. Every relationship is an edge. Queryable as a graph database.",
+  "description": "sleepvids — video production graph. Engines are pipelines. Channels are filters. Videos are outputs.",
 
-  "schema": {
-    "nodes": {
-      "channel": {"id": "channel:{name}", "fields": ["name", "shelf", "engine", "voice", "mechanism", "status"]},
-      "video": {"id": "video:{channel}:{seq}", "fields": ["title", "script", "metadata", "sources", "status"]},
-      "source": {"id": "source:{name}", "fields": ["url", "license", "cost", "content_type"]},
-      "voice": {"id": "voice:{name}", "fields": ["persona", "accent", "pitch", "pace", "mood"]},
-      "mechanism": {"id": "mechanism:{name}", "fields": ["description", "channels"]},
-      "shelf": {"id": "shelf:{name}", "fields": ["channels", "accent", "voice_primary"]}
+  "engines": {
+    "E1_hosted_music": {
+      "id": "E1",
+      "name": "hosted-music",
+      "description": "Host intro + music whole + host bridges + wedge every frame + goodnight ritual",
+      "stages": [
+        {"name": "source", "input": "PD/MIDI audio or Suno/ACE renders", "output": "raw_audio"},
+        {"name": "script", "input": "lore/theory scripts", "output": "script"},
+        {"name": "tts", "input": "script + voice_config", "output": "narration"},
+        {"name": "mix", "input": "raw_audio + narration", "output": "mixed_audio"},
+        {"name": "render", "input": "mixed_audio + visual_config", "output": "video"}
+      ],
+      "contract": "Voice in gaps, never over music. Host intro, bridges, goodnight ritual.",
+      "serves": ["composer_evenings", "sleepy_covers", "deconstructed", "classical_charts"],
+      "status": "proven_once"
     },
-    "edges": [
-      {"from": "video", "to": "channel", "relation": "belongs_to"},
-      {"from": "video", "to": "source", "relation": "uses_source"},
-      {"from": "video", "to": "voice", "relation": "narrated_by"},
-      {"from": "channel", "to": "shelf", "relation": "on_shelf"},
-      {"from": "channel", "to": "mechanism", "relation": "uses_mechanism"},
-      {"from": "channel", "to": "voice", "relation": "primary_voice"},
-      {"from": "video", "to": "video", "relation": "variant_of"}
-    ]
-  },
-
-  "nodes": {
-    "channel:agi_scenarios": {
-      "type": "channel",
-      "name": "AGI Scenarios",
-      "shelf": "shelf:mind",
-      "engine": "E5a",
-      "voice": "voice:lecturer",
-      "mechanism": "mechanism:difficulty_lullaby",
-      "status": "compile",
-      "effort": 5,
-      "created": "2026-09-27"
+    "E2_reading": {
+      "id": "E2",
+      "name": "reading",
+      "description": "Slow TTS + ambient bed + one whiteboard scene per passage",
+      "stages": [
+        {"name": "corpus", "input": "verified PD text", "output": "text_segments"},
+        {"name": "tts", "input": "text_segments + voice_config", "output": "narration"},
+        {"name": "ambient", "input": "bed_recipe", "output": "ambient_bed"},
+        {"name": "mix", "input": "narration + ambient_bed", "output": "mixed_audio"},
+        {"name": "render", "input": "mixed_audio + visual_config", "output": "video"}
+      ],
+      "contract": "Slow TTS at 0.7x pace. Ambient bed at 35% volume. One visual per passage.",
+      "serves": ["steiner", "daimon", "channeled", "alchemy", "angel", "kashmir", "sufi", "fairy_tales", "folklore"],
+      "status": "built"
     },
-    "channel:etymology": {
-      "type": "channel",
-      "name": "Sleepy Etymology",
-      "shelf": "shelf:mind",
-      "engine": "E5b",
-      "voice": "voice:lecturer",
-      "mechanism": "mechanism:linguistic_drift",
-      "status": "ready",
-      "effort": 3,
-      "created": "2026-09-27"
+    "E3_guided": {
+      "id": "E3",
+      "name": "guided",
+      "description": "Yoga-nidra narration over drone + near-static visual. No plot, only descent.",
+      "stages": [
+        {"name": "cosmology", "input": "cosmology_map", "output": "journey_script"},
+        {"name": "tts", "input": "journey_script + voice_config", "output": "narration"},
+        {"name": "drone", "input": "drone_recipe", "output": "drone_bed"},
+        {"name": "mix", "input": "narration + drone_bed", "output": "mixed_audio"},
+        {"name": "render", "input": "mixed_audio + near_static_visual", "output": "video"}
+      ],
+      "contract": "No plot. Only descent. Drone bed, no captions.",
+      "serves": ["daimon_encounters", "manifestation", "theurgy", "kabbalah_tree", "spanda_body"],
+      "status": "scripts_only"
     },
-    "channel:fairy_tales": {
-      "type": "channel",
-      "name": "Fairy Tales",
-      "shelf": "shelf:story",
-      "engine": "E2a",
-      "voice": "voice:storyteller",
-      "mechanism": "mechanism:nostalgia",
-      "status": "ready",
-      "effort": 3,
-      "created": "2026-09-27"
+    "E4_ambience": {
+      "id": "E4",
+      "name": "ambience",
+      "description": "Synthesized bed + slow visual loop + ship. Cheapest per hour.",
+      "stages": [
+        {"name": "source", "input": "place + bed_recipe", "output": "ambient_bed"},
+        {"name": "visual", "input": "visual_config", "output": "visual_loop"},
+        {"name": "ship", "input": "ambient_bed + visual_loop", "output": "video"}
+      ],
+      "contract": "The room IS the content. No narration. Synthesized or sourced ambient.",
+      "serves": ["fly_on_wall", "anti_sleep_war", "anti_sleep_arguing", "rain_variants"],
+      "status": "unbuilt"
     },
-    "channel:periodic_table": {
-      "type": "channel",
-      "name": "Sleepy Periodic Table",
-      "shelf": "shelf:mind",
-      "engine": "E5d",
-      "voice": "voice:lecturer",
-      "mechanism": "mechanism:collection",
-      "status": "ready",
-      "effort": 2,
-      "created": "2026-09-27"
+    "E5_talk": {
+      "id": "E5",
+      "name": "talk",
+      "description": "Research brief + host essay + whiteboard diagrams. For topics, not texts.",
+      "stages": [
+        {"name": "research", "input": "topic + sources", "output": "research_brief"},
+        {"name": "script", "input": "research_brief", "output": "script"},
+        {"name": "tts", "input": "script + voice_config", "output": "narration"},
+        {"name": "ambient", "input": "bed_recipe", "output": "ambient_bed"},
+        {"name": "mix", "input": "narration + ambient_bed", "output": "mixed_audio"},
+        {"name": "render", "input": "mixed_audio + visual_config", "output": "video"}
+      ],
+      "contract": "Essay format. Research-driven. Same renderer as E2 but with research stage.",
+      "serves": ["agi_scenarios", "sleepy_maths", "etymology", "sleepy_periodic", "good_news"],
+      "status": "built"
     },
-    "channel:anti_sleep_war": {
-      "type": "channel",
-      "name": "Anti-Sleep War",
-      "shelf": "shelf:place",
-      "engine": "E4b",
-      "voice": null,
-      "mechanism": "mechanism:contrast_comfort",
-      "status": "produced",
-      "effort": 1,
-      "created": "2026-09-27"
-    },
-    "channel:good_news": {
-      "type": "channel",
-      "name": "Good News Tonight",
-      "shelf": "shelf:fresh",
-      "engine": "E6a",
-      "voice": "voice:healer",
-      "mechanism": "mechanism:ritual",
-      "status": "freshness",
-      "effort": 4,
-      "created": "2026-09-27"
-    },
-
-    "voice:lecturer": {
-      "type": "voice",
-      "name": "The Lecturer",
-      "persona": "Clear teacher. Makes complex things simple without dumbing them down.",
-      "instruct": "Clear, neutral male voice. Precise, technical. American accent. Calm authority.",
-      "gender": "male",
-      "accent": "american",
-      "pitch": "medium",
-      "pace": "measured",
-      "mood": ["clear", "precise", "educational", "calm"],
-      "shelves": ["shelf:mind"],
-      "metrics": {"videos_used": 0, "avg_retention": 0, "total_views": 0}
-    },
-    "voice:storyteller": {
-      "type": "voice",
-      "name": "The Storyteller",
-      "persona": "Fireside narrator. Makes every tale feel personal.",
-      "instruct": "Soft, gentle female voice. Warm tone. Slight smile in the voice.",
-      "gender": "female",
-      "accent": "european",
-      "pitch": "medium",
-      "pace": "slow",
-      "mood": ["warm", "cozy", "intimate", "gentle"],
-      "shelves": ["shelf:story"],
-      "metrics": {"videos_used": 0, "avg_retention": 0, "total_views": 0}
-    },
-    "voice:healer": {
-      "type": "voice",
-      "name": "The Healer",
-      "persona": "Compassionate presence. Makes you feel safe and understood.",
-      "instruct": "Warm, friendly female voice. Gentle, caring tone.",
-      "gender": "female",
-      "accent": "neutral",
-      "pitch": "medium",
-      "pace": "slow",
-      "mood": ["warm", "caring", "safe", "hopeful"],
-      "shelves": ["shelf:fresh", "shelf:story"],
-      "metrics": {"videos_used": 0, "avg_retention": 0, "total_views": 0}
-    },
-
-    "shelf:mind": {
-      "type": "shelf",
-      "name": "MIND",
-      "accent": "#2E8B8B",
-      "voice_primary": "voice:lecturer",
-      "channels": ["channel:agi_scenarios", "channel:etymology", "channel:periodic_table"]
-    },
-    "shelf:story": {
-      "type": "shelf",
-      "name": "STORY",
-      "accent": "#C9A227",
-      "voice_primary": "voice:storyteller",
-      "channels": ["channel:fairy_tales"]
-    },
-    "shelf:place": {
-      "type": "shelf",
-      "name": "PLACE",
-      "accent": null,
-      "voice_primary": null,
-      "channels": ["channel:anti_sleep_war"]
-    },
-    "shelf:fresh": {
-      "type": "shelf",
-      "name": "FRESH",
-      "accent": "#FF6B6B",
-      "voice_primary": "voice:healer",
-      "channels": ["channel:good_news"]
-    },
-
-    "mechanism:difficulty_lullaby": {
-      "type": "mechanism",
-      "name": "Difficulty Lullaby",
-      "description": "Surrender. Hard content, permission to stop tracking.",
-      "desire": "permission to stop tracking",
-      "channels": ["channel:agi_scenarios"]
-    },
-    "mechanism:linguistic_drift": {
-      "type": "mechanism",
-      "name": "Linguistic Drift",
-      "description": "Words as water. Etymology, roots, thesaurus.",
-      "desire": "meaning dissolving into sound",
-      "channels": ["channel:etymology"]
-    },
-    "mechanism:nostalgia": {
-      "type": "mechanism",
-      "name": "Nostalgia",
-      "description": "Known things. Fairy tales, covers, recipes.",
-      "desire": "the past, curated",
-      "channels": ["channel:fairy_tales"]
-    },
-    "mechanism:collection": {
-      "type": "mechanism",
-      "name": "Collection",
-      "description": "Complete the set. Elements, flags, constellations.",
-      "desire": "full sets",
-      "channels": ["channel:periodic_table"]
-    },
-    "mechanism:contrast_comfort": {
-      "type": "mechanism",
-      "name": "Contrast Comfort",
-      "description": "Safe inside. Bunker, storm outside.",
-      "desire": "danger at a distance",
-      "channels": ["channel:anti_sleep_war"]
-    },
-    "mechanism:ritual": {
-      "type": "mechanism",
-      "name": "Ritual",
-      "description": "Same beats nightly. Predictability as safety.",
-      "desire": "routine",
-      "channels": ["channel:good_news"]
-    },
-
-    "source:gutenberg": {
-      "type": "source",
-      "name": "Project Gutenberg",
-      "url": "https://www.gutenberg.org",
-      "license": "PD",
-      "cost": "free",
-      "auth_required": false,
-      "content_type": ["fairy_tales", "philosophy", "scifi", "history"]
-    },
-    "source:etymonline": {
-      "type": "source",
-      "name": "Etymonline",
-      "url": "https://www.etymonline.com",
-      "license": "proprietary",
-      "cost": "free",
-      "auth_required": false,
-      "content_type": ["etymology", "word_origins"]
-    },
-    "source:pubchem": {
-      "type": "source",
-      "name": "PubChem",
-      "url": "https://pubchem.ncbi.nlm.nih.gov",
-      "license": "public_domain",
-      "cost": "free",
-      "auth_required": false,
-      "content_type": ["elements", "chemical_data"]
-    },
-    "source:freesound": {
-      "type": "source",
-      "name": "Freesound",
-      "url": "https://freesound.org",
-      "license": "CC0/CC-BY",
-      "cost": "free",
-      "auth_required": true,
-      "content_type": ["ambient_sounds", "rain", "thunder"]
-    },
-    "source:skynet_countdown": {
-      "type": "source",
-      "name": "Skynet Countdown",
-      "url": "https://skynetcountdown.com",
-      "license": "free",
-      "cost": "free",
-      "auth_required": false,
-      "content_type": ["agi_predictions", "ai_timeline"]
-    },
-    "source:goodnewsnetwork": {
-      "type": "source",
-      "name": "Good News Network",
-      "url": "https://www.goodnewsnetwork.org",
-      "license": "proprietary",
-      "cost": "free",
-      "auth_required": false,
-      "content_type": ["positive_news"]
+    "E6_freshness": {
+      "id": "E6",
+      "name": "freshness",
+      "description": "Web scan → brief → E5 render, same-day. For daily content.",
+      "stages": [
+        {"name": "scan", "input": "query_packs", "output": "raw_stories"},
+        {"name": "filter", "input": "raw_stories + filter_rules", "output": "curated_stories"},
+        {"name": "brief", "input": "curated_stories", "output": "daily_brief"},
+        {"name": "render", "input": "daily_brief + E5_pipeline", "output": "video"}
+      ],
+      "contract": "Daily scan → brief → render. Same-day production.",
+      "serves": ["good_news"],
+      "status": "scan_only"
     }
   },
 
+  "channels": {
+    "agi_scenarios": {
+      "engine": "E5",
+      "shelf": "MIND",
+      "voice": "V03_Lecturer",
+      "mechanism": "difficulty_lullaby",
+      "filters": {
+        "corpus": "AGI research, AI news, philosophy of mind",
+        "accent": "#2E8B8B",
+        "pace": -0.3,
+        "visual": "black_screen",
+        "style": "essay"
+      },
+      "seo": {
+        "title_formula": "{topic} — Explained Slowly for Sleep",
+        "primary_keyword": "AGI sleep",
+        "tags": ["AGI", "artificial intelligence", "sleep", "explained slowly"]
+      }
+    },
+    "etymology": {
+      "engine": "E5",
+      "shelf": "MIND",
+      "voice": "V03_Lecturer",
+      "mechanism": "linguistic_drift",
+      "filters": {
+        "corpus": "Etymonline, Wiktionary, historical dictionaries",
+        "accent": "#2E8B8B",
+        "pace": -0.3,
+        "visual": "black_screen",
+        "style": "deep_etymology"
+      },
+      "seo": {
+        "title_formula": "The Word '{word}' — A Journey Through History, Philosophy, and Meaning",
+        "primary_keyword": "etymology sleep",
+        "tags": ["etymology", "word origins", "philosophy", "sleep"]
+      }
+    },
+    "fairy_tales": {
+      "engine": "E2",
+      "shelf": "STORY",
+      "voice": "V02_Storyteller",
+      "mechanism": "nostalgia",
+      "filters": {
+        "corpus": "Gutenberg fairy tales (Grimm, Andersen, Lang)",
+        "accent": "#C9A227",
+        "pace": -0.3,
+        "visual": "hand_drawn",
+        "style": "reading"
+      },
+      "seo": {
+        "title_formula": "{tale} — {author}, Read Slowly for Sleep",
+        "primary_keyword": "fairy tales sleep",
+        "tags": ["fairy tales", "bedtime stories", "sleep", "andersen", "grimm"]
+      }
+    },
+    "periodic_table": {
+      "engine": "E5",
+      "shelf": "MIND",
+      "voice": "V03_Lecturer",
+      "mechanism": "collection",
+      "filters": {
+        "corpus": "PubChem element data, Wikipedia",
+        "accent": "#2E8B8B",
+        "pace": -0.3,
+        "visual": "black_screen",
+        "style": "reference"
+      },
+      "seo": {
+        "title_formula": "Element {number}: {name} — {fact} | Sleep Science",
+        "primary_keyword": "periodic table sleep",
+        "tags": ["periodic table", "elements", "chemistry", "sleep"]
+      }
+    },
+    "anti_sleep_war": {
+      "engine": "E4",
+      "shelf": "PLACE",
+      "voice": null,
+      "mechanism": "contrast_comfort",
+      "filters": {
+        "corpus": "Freesound ambient sounds",
+        "accent": null,
+        "bed_recipe": "distant_artillery + rain_on_concrete + generator_hum",
+        "visual": "dark_bunker_static",
+        "style": "ambience"
+      },
+      "seo": {
+        "title_formula": "Bunker — Safe Inside, Storm Outside — {duration}",
+        "primary_keyword": "bunker ambience sleep",
+        "tags": ["bunker", "ambience", "rain", "sleep", "anti-sleep"]
+      }
+    },
+    "good_news": {
+      "engine": "E6",
+      "shelf": "FRESH",
+      "voice": "V05_Healer",
+      "mechanism": "ritual",
+      "filters": {
+        "corpus": "FreeNewsApi, Good News Network, RSS feeds",
+        "accent": "#FF6B6B",
+        "pace": -0.3,
+        "visual": "black_screen",
+        "style": "daily"
+      },
+      "seo": {
+        "title_formula": "Tonight's Good News From Around the World",
+        "primary_keyword": "good news sleep",
+        "tags": ["good news", "positive stories", "sleep", "uplifting"]
+      }
+    }
+  },
+
+  "nodes": {
+    "engine:E1": {"type": "engine", "name": "hosted-music", "status": "proven_once"},
+    "engine:E2": {"type": "engine", "name": "reading", "status": "built"},
+    "engine:E3": {"type": "engine", "name": "guided", "status": "scripts_only"},
+    "engine:E4": {"type": "engine", "name": "ambience", "status": "unbuilt"},
+    "engine:E5": {"type": "engine", "name": "talk", "status": "built"},
+    "engine:E6": {"type": "engine", "name": "freshness", "status": "scan_only"},
+    "channel:agi_scenarios": {"type": "channel", "engine": "E5", "shelf": "MIND"},
+    "channel:etymology": {"type": "channel", "engine": "E5", "shelf": "MIND"},
+    "channel:fairy_tales": {"type": "channel", "engine": "E2", "shelf": "STORY"},
+    "channel:periodic_table": {"type": "channel", "engine": "E5", "shelf": "MIND"},
+    "channel:anti_sleep_war": {"type": "channel", "engine": "E4", "shelf": "PLACE"},
+    "channel:good_news": {"type": "channel", "engine": "E6", "shelf": "FRESH"}
+  },
+
   "edges": [
-    {"from": "channel:agi_scenarios", "to": "shelf:mind", "relation": "on_shelf"},
-    {"from": "channel:etymology", "to": "shelf:mind", "relation": "on_shelf"},
-    {"from": "channel:fairy_tales", "to": "shelf:story", "relation": "on_shelf"},
-    {"from": "channel:periodic_table", "to": "shelf:mind", "relation": "on_shelf"},
-    {"from": "channel:anti_sleep_war", "to": "shelf:place", "relation": "on_shelf"},
-    {"from": "channel:good_news", "to": "shelf:fresh", "relation": "on_shelf"},
-    {"from": "channel:agi_scenarios", "to": "voice:lecturer", "relation": "primary_voice"},
-    {"from": "channel:etymology", "to": "voice:lecturer", "relation": "primary_voice"},
-    {"from": "channel:fairy_tales", "to": "voice:storyteller", "relation": "primary_voice"},
-    {"from": "channel:periodic_table", "to": "voice:lecturer", "relation": "primary_voice"},
-    {"from": "channel:anti_sleep_war", "to": "voice:null", "relation": "primary_voice"},
-    {"from": "channel:good_news", "to": "voice:healer", "relation": "primary_voice"},
-    {"from": "channel:agi_scenarios", "to": "mechanism:difficulty_lullaby", "relation": "uses_mechanism"},
-    {"from": "channel:etymology", "to": "mechanism:linguistic_drift", "relation": "uses_mechanism"},
-    {"from": "channel:fairy_tales", "to": "mechanism:nostalgia", "relation": "uses_mechanism"},
-    {"from": "channel:periodic_table", "to": "mechanism:collection", "relation": "uses_mechanism"},
-    {"from": "channel:anti_sleep_war", "to": "mechanism:contrast_comfort", "relation": "uses_mechanism"},
-    {"from": "channel:good_news", "to": "mechanism:ritual", "relation": "uses_mechanism"},
-    {"from": "channel:agi_scenarios", "to": "source:skynet_countdown", "relation": "uses_source"},
-    {"from": "channel:etymology", "to": "source:etymonline", "relation": "uses_source"},
-    {"from": "channel:fairy_tales", "to": "source:gutenberg", "relation": "uses_source"},
-    {"from": "channel:periodic_table", "to": "source:pubchem", "relation": "uses_source"},
-    {"from": "channel:anti_sleep_war", "to": "source:freesound", "relation": "uses_source"},
-    {"from": "channel:good_news", "to": "source:goodnewsnetwork", "relation": "uses_source"}
+    {"from": "channel:agi_scenarios", "to": "engine:E5", "relation": "uses_engine"},
+    {"from": "channel:etymology", "to": "engine:E5", "relation": "uses_engine"},
+    {"from": "channel:fairy_tales", "to": "engine:E2", "relation": "uses_engine"},
+    {"from": "channel:periodic_table", "to": "engine:E5", "relation": "uses_engine"},
+    {"from": "channel:anti_sleep_war", "to": "engine:E4", "relation": "uses_engine"},
+    {"from": "channel:good_news", "to": "engine:E6", "relation": "uses_engine"}
   ]
 }
