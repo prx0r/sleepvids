@@ -3,18 +3,63 @@
   "title": "Timetables for Sleep",
   "description": "Reading train, bus, and transport timetables aloud for sleep. Monotonous data, soothing delivery. The departure board as lullaby.",
 
+  "concept": "Real train announcements + train ambiance = the whole video. The voice IS the departure board. Per country, per operator, accurate local style.",
+
   "engine": "E5b",
   "shelf": "MIND",
 
   "format": {
-    "type": "timetable_reading",
+    "type": "train_announcement",
     "duration_target_minutes": 60,
     "structure": [
-      "1. Route introduction — where we're going, which line",
-      "2. Timetable reading — departures, platforms, calling points, arrival times",
-      "3. Variations — express vs stopping, different operators",
-      "4. Closing — 'sleep well, next train departs at...'"
+      "1. Station announcement — 'The next train to arrive at platform X is the HH:MM service to DESTINATION'",
+      "2. Departure announcement — 'The HH:MM service to DESTINATION is now ready for departure at platform X'",
+      "3. Calling points — 'This train calls at STATION, STATION, STATION...'",
+      "4. Delay/update — 'We are sorry to announce a delay of approximately MINUTES minutes'",
+      "5. Arrival — 'We are now approaching STATION. Please mind the gap between the train and the platform'"
     ]
+  },
+
+  "audio_sources": [
+    {"name": "Train ambiance", "source": "freesound.org", "license": "CC0/CC-BY", "query": "train interior rain window wheel rhythm"},
+    {"name": "Station ambiance", "source": "freesound.org", "license": "CC0/CC-BY", "query": "train station announcement echo platform"},
+    {"name": "Train announcements (UK)", "source": "railannouncements.co.uk", "license": "FOI (non-commercial)", "note": "Phil Sayer, Celia Drummond — real UK rail voice"},
+    {"name": "Train announcements (Japan)", "source": "NHK/documentaries", "license": "check", "note": "Hassha melodi, departure jingles"}
+  ],
+
+  "country_styles": {
+    "uk": {
+      "voice_style": "Polite, formal, clear. 'The next train to arrive at platform 2 is the 14:35 LNER Azuma service to Edinburgh Waverley'",
+      "phrases": ["The next train to arrive at platform X is the HH:MM service to DESTINATION", "We are sorry to announce a delay of approximately MINUTES minutes", "Please mind the gap between the train and the platform", "This is a security announcement"],
+      "operators": ["LNER", "GWR", "Avanti West Coast", "ScotRail", "Southeastern", "Thameslink"],
+      "ambience": "Rain on window, wheel rhythm, distant announcements, platform echo"
+    },
+    "japan": {
+      "voice_style": "Polite, melodic, formal. Each station has a unique departure melody (hassha merodii)",
+      "phrases": ["Mamonaku, YUBANSEN ni,densha ga mairimasu", "Door ga shimarimasu. Gochuui kudasai", "Tsugi wa STATION, STATION desu"],
+      "operators": ["JR East", "JR Central", "Tokyo Metro", "Keihan", "Tobu"],
+      "ambience": "Departure melody, platform chime, gentle hum, rain on roof",
+      "special": "Each station has its own melody — 200+ unique jingles composed by Minoru Mukaiya"
+    },
+    "germany": {
+      "voice_style": "Efficient, precise, direct. 'Zug nach Berlin Hbf über Hannover Hbf. Abfahrt 14:35, Gleis 7'",
+      "phrases": ["Ihr Zug nach DESTINATION über STOPPERSON fährt heute um HH:MM Uhr von Gleis X ab", "Zurückbleiben bitte", "Bitte steigen Sie ein"],
+      "operators": ["Deutsche Bahn ICE", "DB Regio", "S-Bahn"],
+      "ambience": "Platform announcement, ICE hum, door chime, station echo"
+    },
+    "france": {
+      "voice_style": "Elegant, measured. 'Le TGV à destination de Lyon Part-Dieu va partir de la voie 3'",
+      "phrases": ["Le TGV à destination de DESTINATION va partir de la voie X", "Voie number X pour le train à destination de DESTINATION", "Le départ est prévu à HH:MM"],
+      "operators": ["SNCF TGV", "SNCF TER", "RATP"],
+      "ambience": "TGV hum, platform announcement, café ambiance"
+    }
+  },
+
+  "audio_style": {
+    "narration": "Train-announcement-style voice (not reading timetables, making announcements)",
+    "ambient": "Train interior sounds layered underneath",
+    "pacing": "Natural announcement pace. Don't slow it down — the announcements ARE the content.",
+    "visual": "Departure board text OR black screen with station name"
   },
 
   "data_sources": [
