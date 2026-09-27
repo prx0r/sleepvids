@@ -1,0 +1,54 @@
+{
+  "channel": "flights",
+  "title": "Flights for Sleep",
+  "description": "Airline announcements, captain's voice, flight info for sleep. The departure gate as lullaby. Boarding calls, safety briefings, altitude announcements, landing whispers.",
+
+  "engine": "E5b",
+  "shelf": "MIND",
+
+  "concept": "Airline announcements + cabin ambiance = the whole video. Captain speaking, boarding calls, safety briefings, altitude updates, landing announcements. Per airline, per route, accurate local style.",
+
+  "format": {
+    "type": "flight_announcement",
+    "duration_target_minutes": 60,
+    "structure": [
+      "1. Gate announcement — 'Flight BA123 to Tokyo is now boarding at Gate B32'",
+      "2. Safety briefing — 'Ladies and gentlemen, welcome aboard...'",
+      "3. Captain's announcement — 'Good evening, this is your captain speaking...'",
+      "4. Altitude updates — 'We are now cruising at thirty-five thousand feet'",
+      "5. Turbulence — 'We may experience some light turbulence'",
+      "6. Descent — 'We are beginning our descent into Tokyo Narita'",
+      "7. Landing — 'Welcome to Tokyo. Local time is...'"
+    ]
+  },
+
+  "audio_sources": [
+    {"name": "Cabin ambiance", "source": "freesound.org", "license": "CC0/CC-BY", "query": "airplane cabin white noise engine hum"},
+    {"name": "Airport ambiance", "source": "freesound.org", "license": "CC0/CC-BY", "query": "airport terminal announcement gate"},
+    {"name": "Seatbelt chime", "source": "freesound.org", "license": "CC0/CC-BY", "query": "airplane seatbelt sign chime"}
+  ],
+
+  "airline_styles": {
+    "british_airways": {
+      "voice_style": "Warm, professional, reassuring. 'Good evening, ladies and gentlemen, this is your captain speaking. Welcome aboard British Airways flight BA115 to New York JFK.'",
+      "captain_phrases": ["Good evening, this is your captain speaking", "We are currently cruising at an altitude of thirty-five thousand feet", "We expect to arrive at JFK at approximately local time", "Cabin crew, please prepare for landing"],
+      "cabin_phrases": ["Ladies and gentlemen, welcome aboard", "Please ensure your seatbelt is securely fastened", "Your seatbelt should be worn whenever the seatbelt sign is illuminated", "We will be dimming the cabin lights for the duration of the flight"]
+    },
+    "japan_airlines": {
+      "voice_style": "Polite, measured, formal. 'Moshiwake arimasen ga, honjitsu wa Japan Airlines ni go-riyou itadakimashite, arigatou gozaimasu'",
+      "captain_phrases": ["Moshimoshi, kochira wa kapten desu", "Genzai koukuu kousoku de junbi shite imasu", "O-machikudasai"],
+      "cabin_phrases": ["O-kyakusama ni go-annai itashimasu", "Seeruto o shime kudasai"]
+    },
+    "lufthansa": {
+      "voice_style": "Efficient, direct, German precision. 'Guten Abend, meine Damen und Herren. Willkommen an Bord der Lufthansa Flug LH456 nach Frankfurt'",
+      "captain_phrases": ["Guten Abend, hier spricht Ihr Kapitän", "Wir fliegen in einer Höhe von zehntausend Metern", "Wir erwarten eine Landung um Uhr"],
+      "cabin_phrases": ["Ihre Aufmerksamkeit bitte", "Bitte achten Sie darauf, dass Ihr Sicherheitsgurt angelegt ist"]
+    }
+  },
+
+  "seo": {
+    "title_formula": "{Airline} {Route} — Captain Announcements for Sleep | {Duration}",
+    "primary_keyword": "flight announcements sleep",
+    "tags": ["flight", "airline", "sleep", "announcements", "captain", "airplane", "cabin", "ASMR", "relaxing"]
+  }
+}

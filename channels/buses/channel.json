@@ -1,0 +1,49 @@
+{
+  "channel": "buses",
+  "title": "Bus Rides for Sleep",
+  "description": "Bus announcements, driver's voice, route info for sleep. The bus stop as lullaby. Local stops, route numbers, next stop announcements.",
+
+  "engine": "E5b",
+  "shelf": "MIND",
+
+  "concept": "Bus announcements + road ambiance = the whole video. Driver announcing stops, route info, next stop. Per city, accurate local style. More intimate than trains — smaller vehicle, closer voice.",
+
+  "format": {
+    "type": "bus_announcement",
+    "duration_target_minutes": 60,
+    "structure": [
+      "1. Route announcement — 'This is route X to DESTINATION'",
+      "2. Next stop — 'Next stop: STOP NAME'",
+      "3. Stop announcement — 'This stop is STOP NAME'",
+      "4. Connection info — 'Change here for routes Y and Z'",
+      "5. Driver commentary — 'We are now traveling along STREET NAME'"
+    ]
+  },
+
+  "city_styles": {
+    "london": {
+      "voice_style": "Clear, efficient, London accent. 'This is route 73 to Victoria Station'",
+      "phrases": ["This is route X to DESTINATION", "Next stop is STOP NAME", "This stop is STOP NAME. Change here for the TUBE"],
+      "operators": ["TfL London Buses", "Arriva", "Go-Ahead"],
+      "ambience": "Road noise, engine hum, doors hissing, rain on roof"
+    },
+    "tokyo": {
+      "voice_style": "Polite, formal, Japanese. 'Tsugi wa, STOP NAME desu'",
+      "phrases": ["Tsugi wa STOP NAME desu", "Maigo no basu wa TOEN desu", "Go-chuui kudasai"],
+      "operators": ["Toei Bus", "Keio Bus", "Odakyu Bus"],
+      "ambience": "Road noise, gentle engine, departure melody, rain"
+    },
+    "new_york": {
+      "voice_style": "Direct, New York accent. 'Next stop, Broadway and 42nd Street'",
+      "phrases": ["Next stop is STOP NAME", "This stop is STOP NAME", "Transfer available to the subway"],
+      "operators": ["MTA New York City Bus"],
+      "ambience": "City traffic, engine rumble, doors opening, street sounds"
+    },
+    "berlin": {
+      "voice_style": "Efficient, German. 'Nächster Halt: STOP NAME'",
+      "phrases": ["Nächster Halt STOP NAME", "Umsteigen zu LINIE"],
+      "operators": ["BVG Berlin"],
+      "ambience": "City sounds, bus engine, doors, rain"
+    }
+  }
+}

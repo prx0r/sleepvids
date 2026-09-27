@@ -100,6 +100,39 @@ It does NOT help with:
 
 ---
 
+## Transport Hub: The Infinite Content Engine
+
+The transport announcement system is the lowest-effort, highest-scale content model:
+
+**Clone one voice per country → plug in timetable data → infinite videos.**
+
+| Channel | Vehicle | Audio | Visual | Effort |
+|---------|---------|-------|--------|--------|
+| Timetables | Train | Announcement voice + train ambiance | Stock footage / departure board | 1 |
+| Flights | Airplane | Captain voice + cabin ambiance | Stock footage / cabin shots | 1 |
+| Buses | Bus | Driver voice + road ambiance | Stock footage / road views | 1 |
+
+**Key insight:** The voice clone is the asset. The timetable data is the content. The stock footage is the visual. Once the voice is cloned, producing a new video is just:
+1. Get timetable data (public)
+2. Write template announcements (30 min)
+3. Generate TTS (5 min)
+4. Source stock footage (10 min)
+5. Compile (10 min)
+
+**Total: ~60 minutes per video. No scripting. No research. Just data in, video out.**
+
+### Differentiation per channel
+- **Different voice per vehicle type** — train conductor ≠ bus driver ≠ captain
+- **Different ambiance** — train sounds ≠ cabin hum ≠ road noise
+- **Different visual style** — train exterior ≠ airplane cabin ≠ bus interior
+- **Different countries** — Japanese trains ≠ German trains ≠ UK trains
+
+### Content math
+- 3 voice clones × 4 countries × 10 routes = 120 videos
+- Each video 60-120 minutes
+- Update quarterly when timetables change
+- One voice clone = infinite routes
+
 ## Differentiation Rules
 
 1. **Different voice per channel** — not just different settings, different voice entirely
