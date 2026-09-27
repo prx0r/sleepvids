@@ -1,0 +1,146 @@
+{
+  "format": "deep_etymology",
+  "description": "A word is a motif. Each episode is a master's thesis on that word — its history, philosophy, science, and the stories it carries. The word is the door; the journey is the content.",
+
+  "structure": {
+    "duration_target_minutes": 120,
+    "sections": 6,
+    "principle": "Interesting enough to choose; forgiving enough to drift away from",
+    "climax": null,
+    "tension_budget": 0,
+    "cadence": "constant"
+  },
+
+  "section_template": {
+    "section_1": {
+      "title": "The Word Today",
+      "purpose": "Ground the listener in the modern meaning",
+      "duration_minutes": 5,
+      "content": "Definition. Common usage. How we encounter it daily.",
+      "example": "Vegetable. A plant grown for its edible parts. We eat them every day. But the word is older than cooking. Older than farming. Older than agriculture itself."
+    },
+    "section_2": {
+      "title": "The Etymology",
+      "purpose": "Where the word came from",
+      "duration_minutes": 15,
+      "content": "Root language. Proto-forms. How it traveled. What it originally meant.",
+      "example": "From Latin 'vegetabilis' — able to grow. From 'vegetare' — to enliven. From 'vegetus' — lively, vigorous. The word originally meant 'alive' — not 'edible'."
+    },
+    "section_3": {
+      "title": "The Historical Journey",
+      "purpose": "How the word traveled through time",
+      "duration_minutes": 25,
+      "content": "Century by century. Who used it. How meaning shifted. The social context.",
+      "example": "In the 14th century, 'vegetable' meant any living plant. By the 16th century, it meant plants grown for food. The word narrowed as agriculture specialized."
+    },
+    "section_4": {
+      "title": "The Philosophy",
+      "purpose": "What the word reveals about how we think",
+      "duration_minutes": 30,
+      "content": "Aristotle's classification. The boundary between alive and not-alive. What we include and exclude. The ethics of naming.",
+      "example": "Aristotle classified all living things. Plants were 'vegetative' — they grew but didn't move. Animals were 'sensitive' — they moved and felt. Humans were 'rational' — we thought. The word 'vegetable' carries this ancient taxonomy in its bones."
+    },
+    "section_5": {
+      "title": "The Science",
+      "purpose": "What we know now that they didn't",
+      "duration_minutes": 25,
+      "content": "Modern understanding. Photosynthesis. Cell biology. The microbiome. How science reshaped the word.",
+      "example": "We now know plants feel. They respond to touch, light, gravity. The 'vegetative' state isn't passive — it's a different kind of intelligence. Aristotle was wrong. The word remembers his mistake."
+    },
+    "section_6": {
+      "title": "The Return",
+      "purpose": "Circle back to the word with new understanding",
+      "duration_minutes": 10,
+      "content": "What the word means now. How the journey changed it. The comfort of understanding.",
+      "example": "Vegetable. A word that carried Aristotle's philosophy, medieval agriculture, modern science, and your dinner plate. Every time you say it, you're speaking 2,000 years of human thought. Sleep well."
+    }
+  },
+
+  "branching_rules": {
+    "the_word_today": "Always start here. Ground the listener.",
+    "the_etymology": "Always include. This is the anchor.",
+    "the_history": "Branch into relevant historical periods. Each century gets a paragraph.",
+    "the_philosophy": "Branch into relevant philosophers, thinkers, ideas. This is the meat.",
+    "the_science": "Branch into modern understanding. Contrast with ancient views.",
+    "the_return": "Always end here. Circle back. The comfort of understanding."
+  },
+
+  "word_selection_criteria": {
+    "must_have": [
+      "Rich etymology (multiple language roots)",
+      "Philosophical connections (Aristotle, Plato, etc.)",
+      "Historical journey (meaning changed over time)",
+      "Scientific relevance (modern understanding differs)"
+    ],
+    "nice_to_have": [
+      "Counterintuitive meaning (word means something different now)",
+      "Cultural significance (used in important texts)",
+      "Multiple related words (etymology family)",
+      "Controversial or debated meaning"
+    ],
+    "avoid": [
+      "Words with simple, unchanged meanings",
+      "Words without philosophical connections",
+      "Words that are too modern (no historical journey)"
+    ]
+  },
+
+  "example_words": [
+    {
+      "word": "vegetable",
+      "branches": ["Aristotle's taxonomy", "medieval agriculture", "plant biology", "the boundary between alive and not-alive"],
+      "hook": "A word that meant 'alive' now means 'food'."
+    },
+    {
+      "word": "salary",
+      "branches": ["Roman military", "salt as currency", "the history of money", "labor economics"],
+      "hook": "A word that meant 'salt' now means 'money'."
+    },
+    {
+      "word": "disaster",
+      "branches": ["astrology", "the influence of stars", "the Enlightenment rejection of astrology", "how we explain bad luck"],
+      "hook": "A word that meant 'bad star' now means 'bad luck'."
+    },
+    {
+      "word": "companion",
+      "branches": ["bread as social bond", "the history of sharing meals", "friendship and commerce"],
+      "hook": "A word that meant 'bread fellow' now means 'friend'."
+    },
+    {
+      "word": "nice",
+      "branches": ["Latin 'nescius' meaning ignorant", "how a word meaning 'foolish' became 'pleasant'", "the sociology of politeness"],
+      "hook": "A word that meant 'ignorant' now means 'pleasant'."
+    },
+    {
+      "word": "trivial",
+      "branches": ["Latin 'trivium' — the crossroads", "the medieval curriculum", "what we consider unimportant"],
+      "hook": "A word that meant 'the crossroads where three roads meet' now means 'unimportant'."
+    },
+    {
+      "word": "candidate",
+      "branches": ["Latin 'candidatus' — white-robed", "Roman elections", "the theater of politics"],
+      "hook": "A word that meant 'white-robed' now means 'person seeking office'."
+    },
+    {
+      "word": "panic",
+      "branches": ["Pan, the Greek god", "the god of the wild", "how fear got its name"],
+      "hook": "A word that named a god now names a feeling."
+    },
+    {
+      "word": "muscle",
+      "branches": ["Latin 'musculus' — little mouse", "why muscles looked like mice", "anatomy and naming"],
+      "hook": "A word that meant 'little mouse' now means 'body tissue'."
+    },
+    {
+      "word": "salary",
+      "branches": ["Roman salt currency", "the history of money", "labor and value"],
+      "hook": "A word that meant 'salt' now means 'money'."
+    }
+  ],
+
+  "seo": {
+    "title_formula": "The Word '{Word}' — A Journey Through {Era}, Philosophy, and Meaning | Sleepy Etymology",
+    "description_formula": "Fall asleep to the complete history of the word '{word}'. From its ancient roots to its modern meaning, we trace {word} through philosophy, science, and 2,000 years of human thought.\n\nTimestamps:\n0:00 - The Word Today\n{timestamps}\n\nSleep well.",
+    "tags": ["etymology", "{word}", "word origins", "linguistics", "philosophy", "history", "sleep", "vocabulary", "education"]
+  }
+}

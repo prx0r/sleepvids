@@ -1,0 +1,79 @@
+{
+  "video_id": "video:etymology:001",
+  "channel": "channel:etymology",
+  "title": "The Word 'Vegetable' — Aristotle, Philosophy, and the Boundary Between Life and Food | Sleepy Etymology",
+  "duration_target_minutes": 120,
+  "voice": "voice:lecturer",
+  "pace": -0.3,
+  "mechanism": ["mechanism:linguistic_drift", "mechanism:difficulty_lullaby"],
+  "shelf": "shelf:mind",
+  "engine": "E5b",
+  "status": "scripted",
+  "format": "deep_etymology",
+
+  "seo": {
+    "primary_keyword": "etymology sleep",
+    "secondary_keywords": ["vegetable etymology", "word origins sleep", "Aristotle philosophy sleep", "linguistics sleep"],
+    "tags": ["etymology", "vegetable", "Aristotle", "philosophy", "word origins", "linguistics", "sleep", "deep sleep", "history", "science"],
+    "description": "Fall asleep to the complete history of the word 'vegetable.' From its ancient roots to its modern meaning, we trace vegetable through Aristotle's philosophy, medieval agriculture, modern science, and 2,000 years of human thought.\n\nA word that meant 'alive' now means 'food.' How did that happen?\n\nTimestamps:\n0:00 - The Word Today\n5:00 - The Etymology: From Latin 'vegetabilis'\n20:00 - The Historical Journey: Century by century\n45:00 - The Philosophy: Aristotle's taxonomy of living things\n75:00 - The Science: What we know now that they didn't\n100:00 - The Return: What the word means now\n\nSleep well.",
+    "hashtags": ["#sleep", "#etymology", "#Aristotle", "#philosophy", "#wordorigins"]
+  },
+
+  "sources": [
+    {"source": "source:etymonline", "url": "https://www.etymonline.com/word/vegetable", "type": "etymology"},
+    {"source": "source:gutenberg", "url": "https://www.gutenberg.org", "type": "philosophy"},
+    {"source": "source:wikipedia", "url": "https://en.wikipedia.org/wiki/Aristotle", "type": "philosophy"}
+  ],
+
+  "script": {
+    "sections": [
+      {
+        "start": "0:00",
+        "end": "5:00",
+        "title": "The Word Today",
+        "content": "Vegetable. A plant grown for its edible parts. We eat them every day. Carrots. Peas. Beans. Broccoli. The word is so common, so ordinary, we never think about it. But the word is older than cooking. Older than farming. Older than agriculture itself. It carries a history that stretches back 2,000 years. And in that history, we find Aristotle, medieval monks, Enlightenment philosophers, and the very boundary between what is alive and what is food."
+      },
+      {
+        "start": "5:00",
+        "end": "20:00",
+        "title": "The Etymology",
+        "content": "From Latin 'vegetabilis' — able to grow. From 'vegetare' — to enliven. From 'vegetus' — lively, vigorous. The word originally meant 'alive' — not 'edible.' In the 14th century, 'vegetable' meant any living plant. By the 16th century, it meant plants grown for food. The word narrowed as agriculture specialized. We took a word that meant 'the power to grow' and turned it into a label for our dinner."
+      },
+      {
+        "start": "20:00",
+        "end": "45:00",
+        "title": "The Historical Journey",
+        "content": "In ancient Rome, 'vegetabilis' described anything that grew. The word carried no distinction between a tree and a turnip. Both were 'vegetable' — both had the power to grow. In the medieval period, monks cataloged plants for medicinal use. The word began to split: some plants were 'useful,' others were 'merely' vegetable. By the Enlightenment, the word had narrowed further. Plants were classified by their utility to humans. The word 'vegetable' became a hierarchy, not a description."
+      },
+      {
+        "start": "45:00",
+        "end": "75:00",
+        "title": "The Philosophy",
+        "content": "Aristotle classified all living things into three categories: vegetative, sensitive, and rational. Plants were 'vegetative' — they grew but didn't move. Animals were 'sensitive' — they moved and felt. Humans were 'rational' — we thought. This taxonomy dominated Western thought for 2,000 years. The word 'vegetable' carries this ancient classification in its bones. When we say 'vegetative state,' we're using Aristotle's framework. When we say 'vegetable,' we're using a word that once meant 'alive' to mean 'food.' The philosophy is still there, hidden in plain sight."
+      },
+      {
+        "start": "75:00",
+        "end": "100:00",
+        "title": "The Science",
+        "content": "We now know plants feel. They respond to touch, light, gravity. They communicate through chemical signals. The 'vegetative' state isn't passive — it's a different kind of intelligence. Aristotle was wrong. The word remembers his mistake. Modern biology has revealed that the boundary between 'vegetative' and 'sensitive' is not a wall but a gradient. Plants are not less alive than animals. They're alive in a different way."
+      },
+      {
+        "start": "100:00",
+        "end": "115:00",
+        "title": "The Return",
+        "content": "Vegetable. A word that carried Aristotle's philosophy, medieval agriculture, modern science, and your dinner plate. Every time you say it, you're speaking 2,000 years of human thought. The word began as 'alive.' It became 'food.' But underneath, the life is still there. In every carrot, every pea, every bean. The power to grow. The power to become. Sleep well."
+      }
+    ]
+  },
+
+  "created": "2026-09-27",
+  "variant": {"pace": "slow", "captions": true, "hand": "none", "accent": "#2E8B8B"},
+
+  "edges": [
+    {"from": "video:etymology:001", "to": "channel:etymology", "relation": "belongs_to"},
+    {"from": "video:etymology:001", "to": "voice:lecturer", "relation": "narrated_by"},
+    {"from": "video:etymology:001", "to": "source:etymonline", "relation": "uses_source"},
+    {"from": "video:etymology:001", "to": "source:gutenberg", "relation": "uses_source"},
+    {"from": "video:etymology:001", "to": "source:wikipedia", "relation": "uses_source"}
+  ]
+}
