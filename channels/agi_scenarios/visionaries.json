@@ -1,0 +1,174 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-09-27",
+  "title": "AGI Visionaries — The People With Coherent Visions",
+
+  "visionaries": {
+    "sam_altman": {
+      "name": "Sam Altman",
+      "role": "CEO, OpenAI",
+      "vision": "AGI is imminent. We know how to build it. Safety through deployment.",
+      "timeline": "~2026-2028",
+      "key_quotes": [
+        "We are now confident we know how to build AGI as we have traditionally understood it.",
+        "Post-AGI, no one is going to work and the economy is going to collapse.",
+        "I am switching to polyphasic sleep because GPT-5.5 in Codex is so good."
+      ],
+      "approach": "Build fast, deploy, iterate. Safety through scale and oversight.",
+      "risk_view": "Manageable with proper alignment research.",
+      "episode_hook": "The man who says he knows how to build God, and is losing sleep over it.",
+      "sources": ["openai.com/research", "blog.samaltman.com"]
+    },
+    "elon_musk": {
+      "name": "Elon Musk",
+      "role": "CEO, xAI",
+      "vision": "AGI is the biggest risk humanity faces. Build it carefully, or don't build it at all.",
+      "timeline": "2026 (Grok 5)",
+      "key_quotes": [
+        "AGI is significantly higher risk than nuclear weapons.",
+        "That will be Grok 5.",
+        "I think it's not unreasonable to feel that we are now in the AGI era."
+      ],
+      "approach": "Build Grok to AGI, but warn about the dangers. Open source as safety.",
+      "risk_view": "Existential. More dangerous than nukes.",
+      "episode_hook": "The man who builds rockets and warns about AI. Both are about escaping Earth.",
+      "sources": ["x.com/elonmusk", "xAI announcements"]
+    },
+    "demis_hassabis": {
+      "name": "Demis Hassabis",
+      "role": "CEO, Google DeepMind",
+      "vision": "AGI will solve science. But we need a 'precious window' to prepare.",
+      "timeline": "~2030 (5-10 years from 2025)",
+      "key_quotes": [
+        "AGI is probably only a few short years away.",
+        "What we collectively do now will determine how the next phase of civilisation unfolds.",
+        "I call myself a cautious optimist."
+      ],
+      "approach": "Solve intelligence, then solve science. Nobel Prize for protein folding.",
+      "risk_view": "Cautious. Precious window to prepare. Not enough is being done.",
+      "episode_hook": "The gamer who became a scientist who's building God. And he's worried.",
+      "sources": ["deepmind.google/research", "Business Insider interviews"]
+    },
+    "dario_amodei": {
+      "name": "Dario Amodei",
+      "role": "CEO, Anthropic",
+      "vision": "Safety first. AGI is coming, but we need to get alignment right.",
+      "timeline": "~2027-2028",
+      "key_quotes": [
+        "Half of entry-level white-collar work could vanish in the next half-decade.",
+        "There is a 'precious window' to act before AGI arrives."
+      ],
+      "approach": "Constitutional AI. Safety through structure, not just scale.",
+      "risk_view": "High. Alignment is the hard problem.",
+      "episode_hook": "The man who quit OpenAI to build AI safely. Now he's racing the clock.",
+      "sources": ["anthropic.com/research"]
+    },
+    "jensen_huang": {
+      "name": "Jensen Huang",
+      "role": "CEO, NVIDIA",
+      "vision": "AGI is here. But the term is meaningless. Focus on impact, not labels.",
+      "timeline": "Already achieved (March 2026)",
+      "key_quotes": [
+        "I think it's now. I think we've achieved AGI.",
+        "The term AGI has become so overused and ill-defined that it has lost its meaning."
+      ],
+      "approach": "Build the hardware. Let others worry about the definition.",
+      "risk_view": "Dismissive. Focus on practical value, not existential risk.",
+      "episode_hook": "The man who sells shovels in the gold rush, and says the gold is already here.",
+      "sources": ["NVIDIA earnings calls", "GTC presentations"]
+    },
+    "ben_goertzel": {
+      "name": "Ben Goertzel",
+      "role": "CEO, SingularityNET",
+      "vision": "AGI within 9-12 months. Decentralized AI. Open source.",
+      "timeline": "9-12 months from August 2026",
+      "key_quotes": [
+        "Does that really mean AGI can happen in the next year? We can't say for sure.",
+        "But it increased my probability weight."
+      ],
+      "approach": "Open source AGI. Decentralized. No single point of control.",
+      "risk_view": "Moderate. Decentralization is the safety mechanism.",
+      "episode_hook": "The man who wants to build AGI and give it away for free.",
+      "sources": ["AGI-26 conference", "SingularityNET"]
+    },
+    "gary_marcus": {
+      "name": "Gary Marcus",
+      "role": "AI Researcher, NYU",
+      "vision": "AGI is much harder than we think. LLMs are not enough.",
+      "timeline": "Decades away, if ever",
+      "key_quotes": [
+        "AGI is a shorthand for any intelligence that is flexible and general.",
+        "Today's systems are impressive but not intelligent."
+      ],
+      "approach": "Skeptic. Push back on hype. Demand real benchmarks.",
+      "risk_view": "The real risk is overconfidence, not the technology itself.",
+      "episode_hook": "The man who says everyone else is wrong. And he might be right.",
+      "sources": ["garymarcus.org", "Twitter/X"]
+    },
+    "nick_bostrom": {
+      "name": "Nick Bostrom",
+      "role": "Philosopher, Oxford",
+      "vision": "Superintelligence is the last invention. The control problem is unsolved.",
+      "timeline": "Within first third of 21st century",
+      "key_quotes": [
+        "The fate of our species would come to depend on the actions of the machine superintelligence.",
+        "We get to make the first move."
+      ],
+      "approach": "Philosophical. Think about the worst case. Design for it.",
+      "risk_view": "Existential. The gorilla analogy. We are the gorillas.",
+      "episode_hook": "The philosopher who wrote the book that scared Silicon Valley.",
+      "sources": ["nickbostrom.com", "Superintelligence (2014)"]
+    }
+  },
+
+  "episode_ideas": [
+    {
+      "title": "Sam Altman's AGI: The Man Who Says He Knows How to Build God",
+      "visionary": "sam_altman",
+      "hook": "He says he knows how to build AGI. He's losing sleep over it. Literally.",
+      "sources": ["openai.com/research", "blog.samaltman.com", "The Verge GPT-6 coverage"]
+    },
+    {
+      "title": "Elon Musk's AGI: Rockets, Grok, and the End of the World",
+      "visionary": "elon_musk",
+      "hook": "He builds rockets to escape Earth. He builds AI that might destroy it.",
+      "sources": ["x.com/elonmusk", "xAI announcements", "SpaceX"]
+    },
+    {
+      "title": "Demis Hassabis's AGI: The Gamer Who's Building God",
+      "visionary": "demis_hassabis",
+      "hook": "He started with video games. Now he's solving protein folding. And he's worried.",
+      "sources": ["deepmind.google/research", "Business Insider", "WSJ"]
+    },
+    {
+      "title": "Dario Amodei's AGI: The Safety Man in the Race",
+      "visionary": "dario_amodei",
+      "hook": "He quit OpenAI to build AI safely. Now he's racing the clock.",
+      "sources": ["anthropic.com/research", "The Verge"]
+    },
+    {
+      "title": "Jensen Huang's AGI: The Shovel Seller Says the Gold Is Here",
+      "visionary": "jensen_huang",
+      "hook": "NVIDIA sells the shovels. Jensen says the gold is already found.",
+      "sources": ["NVIDIA earnings calls", "GTC"]
+    },
+    {
+      "title": "Ben Goertzel's AGI: Build It and Give It Away",
+      "visionary": "ben_goertzel",
+      "hook": "He wants to build AGI and make it open source. What could go wrong?",
+      "sources": ["AGI-26 conference", "SingularityNET"]
+    },
+    {
+      "title": "Gary Marcus's AGI: The Man Who Says Everyone Is Wrong",
+      "visionary": "gary_marcus",
+      "hook": "The skeptic in the room. And he might be right.",
+      "sources": ["garymarcus.org", "Twitter/X"]
+    },
+    {
+      "title": "Nick Bostrom's AGI: The Philosopher Who Scared Silicon Valley",
+      "visionary": "nick_bostrom",
+      "hook": "He wrote the book. Now everyone is living in it.",
+      "sources": ["nickbostrom.com", "Superintelligence"]
+    }
+  ]
+}
