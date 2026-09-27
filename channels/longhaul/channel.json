@@ -1,0 +1,76 @@
+{
+  "channel": "longhaul",
+  "title": "Long Haul — Flights for Sleep",
+  "description": "Real long-haul flights. Real flight numbers. Real routes. Captain announcements, cabin ambiance, flight map. Economy to first class. The sky at 3am.",
+
+  "engine": "E5b",
+  "shelf": "MIND",
+
+  "concept": "Real flight data + real airline style + flight map animation. Each video is a specific flight on a specific airline. The viewer is on the plane. The captain speaks. The map moves. The engine hums. You fall asleep somewhere over the Atlantic.",
+
+  "airlines": {
+    "british_airways": {
+      "fleet": "Boeing 777, 787, A350, A380",
+      "cabin_classes": ["First", "Club World (Business)", "World Traveller Plus", "World Traveller (Economy)"],
+      "voice_style": "Warm, British, professional. 'Good evening, ladies and gentlemen, this is your captain speaking'",
+      "signature": "Union Jack on tail, navy blue seats, warm lighting",
+      "long_haul_routes": ["LHR-JFK", "LHR-LAX", "LHR-HKG", "LHR-SIN", "LHR-SYD", "LHR-NRT"],
+      "announcement_style": "Polite, measured, reassuring"
+    },
+    "ryanair": {
+      "fleet": "Boeing 737-800, 737 MAX 8",
+      "cabin_classes": ["Economy Only"],
+      "voice_style": "Direct, efficient, Irish. 'Attention passengers, this is your first officer speaking'",
+      "signature": "Blue/yellow seats, tight pitch, no frills",
+      "short_haul_routes": ["STN-DUB", "STN-BCN", "DUB-LHR", "STN-AGP", "DUB-ORK"],
+      "announcement_style": "Brief, no-nonsense, get to the point"
+    },
+    "japan_airlines": {
+      "fleet": "Boeing 777, 787, A350",
+      "cabin_classes": ["First", "Business (J Class)", "Premium Economy", "Economy"],
+      "voice_style": "Polite, melodic, formal Japanese with English announcements",
+      "signature": "Red crane logo, grey seats, meticulous service",
+      "long_haul_routes": ["NRT-JFK", "NRT-LHR", "NRT-SIN", "HNL-NRT", "NRT-CDG"],
+      "announcement_style": "Formal, poetic, precise timing"
+    },
+    "emirates": {
+      "fleet": "Boeing 777, 787, A380",
+      "cabin_classes": ["First", "Business", "Premium Economy", "Economy"],
+      "voice_style": "Warm, multilingual, Gulf accent",
+      "signature": "Gold/cream interiors, entertainment system, luxury feel",
+      "long_haul_routes": ["DXB-JFK", "DXB-LHR", "DXB-SIN", "DXB-SYD", "DXB-LAX"],
+      "announcement_style": "Warm, hospitable, unhurried"
+    }
+  },
+
+  "formats": {
+    "economy": {
+      "visual": "Tight cabin, blue seats, small seat-back screen with flight map",
+      "ambiance": "Standard engine hum, occasional announcements",
+      "vibe": "The long night flight. You fell asleep before takeoff and woke up over the ocean."
+    },
+    "business": {
+      "visual": "Wider seats, personal screen, dimmed cabin, ambient lighting",
+      "ambiance": "Quieter cabin, champagne clinking, subdued conversations",
+      "vibe": "The premium experience. The seat reclines fully. The screen is large. The captain knows your name."
+    },
+    "first": {
+      "visual": "Private suite, closing doors, personal minibar, large screen",
+      "ambiance": "Near silence, occasional service sounds, the most exclusive hum",
+      "vibe": "The pinnacle. A room in the sky. The flight map fills your private screen. The captain whispers."
+    }
+  },
+
+  "data_sources": [
+    {"name": "OpenFlights", "url": "https://openflights.org/data", "license": "free", "format": "CSV — airport lat/lon, routes, airlines"},
+    {"name": "Flightradar24 API", "url": "https://fr24api.flightradar24.com", "license": "paid tier", "format": "REST — real-time + historical flight data"},
+    {"name": "Aviation Weather Center", "url": "https://aviationweather.gov/data/api", "license": "free", "format": "METAR, PIREPs, turbulence forecasts"},
+    {"name": "NASA ASRS", "url": "https://data.nasa.gov", "license": "public", "format": "Wake turbulence encounters"}
+  ],
+
+  "seo": {
+    "title_formula": "Long Haul: {Airline} {Route} — {Class} for Sleep | {Duration} Hours",
+    "primary_keyword": "flight sleep long haul",
+    "tags": ["long haul", "flight", "sleep", "airline", "cabin", "announcements", "flight map", "ASMR", "relaxing", "{airline}", "{route}"]
+  }
+}
