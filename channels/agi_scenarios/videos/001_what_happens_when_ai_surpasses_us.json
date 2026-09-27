@@ -1,0 +1,52 @@
+{
+  "video_id": "video:agi_scenarios:001",
+  "channel": "channel:agi_scenarios",
+  "title": "What Happens When AI Surpasses Us — The Singularity, Explained Slowly for Sleep",
+  "duration_target_minutes": 85,
+  "voice": "voice:lecturer",
+  "pace": -0.3,
+  "mechanism": ["mechanism:difficulty_lullaby", "mechanism:proportion"],
+  "shelf": "shelf:mind",
+  "engine": "E5a",
+  "status": "scripted",
+  "seo": {
+    "primary_keyword": "AGI sleep",
+    "secondary_keywords": ["artificial intelligence sleep", "singularity sleep", "AI explained slowly", "future technology sleep"],
+    "tags": ["AGI", "singularity", "artificial intelligence", "AI safety", "future technology", "sleep", "deep sleep", "fall asleep", "explained slowly", "Sam Altman", "Jensen Huang"],
+    "description": "Fall asleep to a gentle exploration of the singularity — the moment artificial intelligence surpasses human intelligence. We explore expert predictions, possible futures, and why tonight, you can rest.\n\nThis video covers:\n• What AI can and cannot do today\n• Expert predictions on when AGI arrives\n• What changes when machines think better than us\n• Four possible futures: utopia, dystopia, merger, slow fade\n• Why none of this is happening tomorrow\n\nTimestamps:\n0:00 - The Singularity\n0:30 - The Present: AI Today\n10:00 - The Timeline: Expert Predictions\n25:00 - What Changes: Economics, Society, Consciousness\n45:00 - The Scenarios: Utopia, Dystopia, Merger, Slow Fade\n65:00 - The Comfort: Why You Can Rest Tonight\n80:00 - Closing\n\nSources:\n• Skynet Countdown: skynetcountdown.com/agi-timeline\n• Metaculus: metaculus.com/questions/5121\n• IBM Think: ibm.com/think/topics/agi\n• CNAS: cnas.org/publications/the-agi-moment\n\n#sleep #AGI #artificialintelligence #singularity #deeepsleep #explainedslowly",
+    "hashtags": ["#sleep", "#AGI", "#artificialintelligence", "#singularity", "#deeepsleep"]
+  },
+  "sources": [
+    {"source": "source:skynet_countdown", "url": "https://skynetcountdown.com/agi-timeline", "type": "predictions"},
+    {"source": "source:metaculus", "url": "https://metaculus.com/questions/5121", "type": "forecasts"},
+    {"source": "source:ibm_think", "url": "https://ibm.com/think/topics/agi", "type": "research"},
+    {"source": "source:cnas", "url": "https://cnas.org/publications/the-agi-moment", "type": "report"}
+  ],
+  "script": {
+    "sections": [
+      {"start": "0:00", "end": "0:30", "title": "The Singularity", "content": "The singularity. The moment artificial intelligence becomes smarter than humans. Not in one domain. In every domain."},
+      {"start": "0:30", "end": "10:00", "title": "The Present: AI Today", "content": "Right now, AI is narrow. It can play chess. It can write code. It can generate images. But it can't do everything a human can do."},
+      {"start": "10:00", "end": "25:00", "title": "The Timeline: Expert Predictions", "content": "Expert predictions vary wildly. Some say 2026. Others say 2035. Some say never."},
+      {"start": "25:00", "end": "45:00", "title": "What Changes", "content": "When AI surpasses us, everything changes. Economics. Society. Consciousness itself."},
+      {"start": "45:00", "end": "65:00", "title": "The Scenarios", "content": "There are several possible futures. The Utopia. The Dystopia. The Merger. The Slow Fade."},
+      {"start": "65:00", "end": "80:00", "title": "The Comfort", "content": "Here's the thing nobody talks about: none of these scenarios are happening tomorrow."},
+      {"start": "80:00", "end": "85:00", "title": "Closing", "content": "The singularity is coming. Or it isn't. Nobody knows. But tonight, you don't need to know. Tonight, you just need to sleep."}
+    ],
+    "full_script": "The singularity. The moment artificial intelligence becomes smarter than humans. Not in one domain. In every domain. The moment we stop being the most intelligent species on the planet.\n\nRight now, AI is narrow. It can play chess. It can write code. It can generate images. But it can't do everything a human can do. It's specialized. Focused. Limited.\n\nBut that's changing. Fast.\n\nExpert predictions vary wildly. Some say 2026. Others say 2035. Some say never. Sam Altman says we're now confident we know how to build AGI. Jensen Huang says he thinks we've achieved it. The Metaculus community gives 50% probability by 2033.\n\nWhen AI surpasses us, everything changes. Economics. Society. Consciousness itself.\n\nThere are several possible futures. The Utopia. The Dystopia. The Merger. The Slow Fade.\n\nHere's the thing nobody talks about: none of these scenarios are happening tomorrow. The singularity, if it comes, will be gradual. Not a single moment, but a process.\n\nThe singularity is coming. Or it isn't. Nobody knows. But tonight, you don't need to know. Tonight, you just need to sleep.\n\nSleep well."
+  },
+  "created": "2026-09-27",
+  "variant": {
+    "pace": "slow",
+    "captions": true,
+    "hand": "none",
+    "accent": "#2E8B8B"
+  },
+  "edges": [
+    {"from": "video:agi_scenarios:001", "to": "channel:agi_scenarios", "relation": "belongs_to"},
+    {"from": "video:agi_scenarios:001", "to": "voice:lecturer", "relation": "narrated_by"},
+    {"from": "video:agi_scenarios:001", "to": "source:skynet_countdown", "relation": "uses_source"},
+    {"from": "video:agi_scenarios:001", "to": "source:metaculus", "relation": "uses_source"},
+    {"from": "video:agi_scenarios:001", "to": "source:ibm_think", "relation": "uses_source"},
+    {"from": "video:agi_scenarios:001", "to": "source:cnas", "relation": "uses_source"}
+  ]
+}

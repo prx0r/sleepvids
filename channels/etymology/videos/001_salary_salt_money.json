@@ -1,0 +1,39 @@
+{
+  "video_id": "video:etymology:001",
+  "channel": "channel:etymology",
+  "title": "Sleepy Words: The Origin of 'Salary' — Salt Money in Ancient Rome",
+  "duration_target_minutes": 20,
+  "voice": "voice:lecturer",
+  "pace": -0.3,
+  "mechanism": ["mechanism:linguistic_drift"],
+  "shelf": "shelf:mind",
+  "engine": "E5b",
+  "status": "scripted",
+  "seo": {
+    "primary_keyword": "etymology sleep",
+    "secondary_keywords": ["word origins sleep", "salary origin", "latin words sleep"],
+    "tags": ["etymology", "word origins", "latin", "salary", "sleep", "vocabulary", "education"],
+    "description": "Fall asleep to the origin of the word 'salary.' From Latin 'salarium' — salt money. Roman soldiers were paid in salt.\n\nThis is why we say someone is 'worth their salt.' This is why we say 'salad' — from Latin 'salata,' salted things.\n\nThe word travels through time, carrying the story of Roman commerce in its syllables.\n\nSleep well.",
+    "hashtags": ["#sleep", "#etymology", "#wordorigins", "#latin"]
+  },
+  "sources": [
+    {"source": "source:etymonline", "url": "https://www.etymonline.com/word/salary", "type": "etymology"}
+  ],
+  "script": {
+    "sections": [
+      {"start": "0:00", "end": "0:30", "title": "The Word", "content": "Salary. A fixed regular payment, typically paid on a monthly or biweekly basis."},
+      {"start": "0:30", "end": "3:00", "title": "The Origin", "content": "But the word is older than that. Much older. From Latin 'salarium.' Salt money."},
+      {"start": "3:00", "end": "8:00", "title": "The Story", "content": "In ancient Rome, soldiers were paid in salt. Salt was currency. Salt was wealth."},
+      {"start": "8:00", "end": "12:00", "title": "The Journey", "content": "The word traveled through Old French. Into Middle English. Into our mouths today."},
+      {"start": "12:00", "end": "16:00", "title": "The Relatives", "content": "This is why we say someone is 'worth their salt.' And 'salad' — from Latin 'salata,' salted things."},
+      {"start": "16:00", "end": "20:00", "title": "Closing", "content": "Every time you say 'salary,' you're speaking Latin. Sleep well."}
+    ]
+  },
+  "created": "2026-09-27",
+  "variant": {"pace": "slow", "captions": true, "hand": "none", "accent": "#2E8B8B"},
+  "edges": [
+    {"from": "video:etymology:001", "to": "channel:etymology", "relation": "belongs_to"},
+    {"from": "video:etymology:001", "to": "voice:lecturer", "relation": "narrated_by"},
+    {"from": "video:etymology:001", "to": "source:etymonline", "relation": "uses_source"}
+  ]
+}

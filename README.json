@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-09-27",
+  "description": "sleepvids — video production graph. Every entity is a node. Every relationship is an edge. Queryable as a graph database.",
+
+  "query_examples": {
+    "get_all_channels": "graph.nodes[?type=='channel']",
+    "get_channel_videos": "graph.edges[?relation=='belongs_to' && from=='channel:agi_scenarios']",
+    "get_video_sources": "graph.edges[?relation=='uses_source' && from=='video:agi_scenarios:001']",
+    "get_shelf_channels": "graph.edges[?relation=='on_shelf' && to=='shelf:mind']",
+    "get_voice_videos": "graph.edges[?relation=='narrated_by' && to=='voice:lecturer']",
+    "get_mechanism_channels": "graph.edges[?relation=='uses_mechanism' && to=='mechanism:difficulty_lullaby']",
+    "get_all_sources": "graph.nodes[?type=='source']",
+    "get_video_by_id": "graph.nodes['video:agi_scenarios:001']"
+  },
+
+  "structure": {
+    "graph.json": "All nodes and edges. The single source of truth.",
+    "templates/video.json": "Video template with placeholders.",
+    "channels/{name}/videos/{seq}_{title}.json": "Individual video definitions.",
+    "channels/{name}/channel.yaml": "Channel configuration (human-readable)."
+  }
+}

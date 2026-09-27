@@ -1,0 +1,29 @@
+{
+  "video_id": "video:fairy_tales:001",
+  "channel": "channel:fairy_tales",
+  "title": "The Snow Queen — Hans Christian Andersen, Read Slowly for Sleep",
+  "duration_target_minutes": 45,
+  "voice": "voice:storyteller",
+  "pace": -0.3,
+  "mechanism": ["mechanism:nostalgia", "mechanism:eavesdropping"],
+  "shelf": "shelf:story",
+  "engine": "E2a",
+  "status": "scripted",
+  "seo": {
+    "primary_keyword": "fairy tales sleep",
+    "secondary_keywords": ["snow queen andersen", "bedtime stories adults", "fairy tales for sleep"],
+    "tags": ["fairy tales", "snow queen", "hans christian andersen", "bedtime stories", "sleep", "adult bedtime stories", "relaxation"],
+    "description": "Fall asleep to 'The Snow Queen' by Hans Christian Andersen. A fairy tale about a mirror, a fragment, and a journey to the icy north.\n\nRead slowly, gently, for sleep.\n\nSleep well.",
+    "hashtags": ["#sleep", "#fairytales", "#bedtimestories", "#andersen"]
+  },
+  "sources": [
+    {"source": "source:gutenberg", "url": "https://www.gutenberg.org/ebooks/1597", "type": "fairy_tales"}
+  ],
+  "created": "2026-09-27",
+  "variant": {"pace": "slow", "captions": true, "hand": "none", "accent": "#C9A227"},
+  "edges": [
+    {"from": "video:fairy_tales:001", "to": "channel:fairy_tales", "relation": "belongs_to"},
+    {"from": "video:fairy_tales:001", "to": "voice:storyteller", "relation": "narrated_by"},
+    {"from": "video:fairy_tales:001", "to": "source:gutenberg", "relation": "uses_source"}
+  ]
+}

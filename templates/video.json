@@ -1,0 +1,29 @@
+{
+  "template": {
+    "video_id": "video:{channel}:{seq:03d}",
+    "channel": "channel:{name}",
+    "title": "{topic} — {subtopic}, Explained Slowly for Sleep",
+    "duration_target_minutes": 60,
+    "voice": "voice:{name}",
+    "pace": -0.3,
+    "mechanism": ["mechanism:{name}"],
+    "shelf": "shelf:{name}",
+    "engine": "E5a",
+    "status": "ideation",
+    "seo": {
+      "primary_keyword": "{topic} sleep",
+      "secondary_keywords": ["{topic} to sleep to", "{topic} explained slowly", "{topic} for deep sleep"],
+      "tags": ["{topic}", "sleep", "deep sleep", "fall asleep", "explained slowly"],
+      "description": "Fall asleep to a gentle exploration of {topic}. {hook}\n\nTimestamps:\n0:00 - Introduction\n{timestamps}\n\n#sleep #{topic} #deepsleep",
+      "hashtags": ["#sleep", "#{topic}", "#deepsleep"]
+    },
+    "sources": [],
+    "created": "{date}",
+    "variant": {
+      "pace": "slow",
+      "captions": true,
+      "hand": "none",
+      "accent": "{accent}"
+    }
+  }
+}
