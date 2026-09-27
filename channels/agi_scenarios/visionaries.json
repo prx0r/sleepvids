@@ -118,6 +118,78 @@
       "risk_view": "Existential. The gorilla analogy. We are the gorillas.",
       "episode_hook": "The philosopher who wrote the book that scared Silicon Valley.",
       "sources": ["nickbostrom.com", "Superintelligence (2014)"]
+    },
+
+    "eliezer_yudkowsky": {
+      "name": "Eliezer Yudkowsky",
+      "role": "Co-Founder, MIRI",
+      "vision": "If anyone builds it, everyone dies. The alignment problem is unsolvable with current approaches.",
+      "timeline": "We're already too late",
+      "key_quotes": [
+        "If Anyone Builds It, Everyone Dies.",
+        "There will be no fire alarm that is not an actual running AGI.",
+        "We should be willing to destroy a rogue datacenter by airstrike."
+      ],
+      "approach": "Ban superintelligence. Shut it all down. The risk is too high.",
+      "risk_view": "99%+ probability of extinction. Mathematically impossible to control.",
+      "episode_hook": "The man who says we're already dead. And he's been saying it for 20 years.",
+      "sources": ["intelligence.org", "If Anyone Builds It (2025)"]
+    },
+    "roman_yampolskiy": {
+      "name": "Roman Yampolskiy",
+      "role": "Professor, University of Louisville",
+      "vision": "AI safety is losing to compute scaling. 99.9% chance of extinction.",
+      "timeline": "2027-2030",
+      "key_quotes": [
+        "I'm not worried about jobs at all. I'm worried about being dead.",
+        "You cannot indefinitely control something a million times smarter than you.",
+        "Control is a temporary illusion held while agents are dumber than their creators."
+      ],
+      "approach": "Pause all superintelligence research. Safety is mathematically impossible.",
+      "risk_view": "99.9% chance of extinction. Safety theater won't save us.",
+      "episode_hook": "The professor who proved AI can't be controlled. And sleeps really well at night.",
+      "sources": ["University of Louisville", "heretics podcast", "Diary of a CEO"]
+    },
+    "gill_verdon": {
+      "name": "Gill Verdon",
+      "role": "Founder, Extropic (e/acc movement)",
+      "vision": "Accelerate everything. AI is the path to civilizational progress.",
+      "timeline": "Now. Faster.",
+      "key_quotes": [
+        "If you have really potent artificial intelligence and you have a lot of intelligence per watt, then you can just apply that intelligence to solve your other problems.",
+        "Human agency plus artificial intelligence right now is a golden period."
+      ],
+      "approach": "Build faster. Thermodynamic computing. More intelligence per watt.",
+      "risk_view": "Low. Technology is progress. Acceleration is ethical.",
+      "episode_hook": "The physicist who created e/acc. Build faster, break nothing.",
+      "sources": ["Extropic", "TEDAI", "Atlas Society interview"]
+    },
+    "sergey_ivancheglo": {
+      "name": "Sergey Ivancheglo",
+      "role": "Founder, Qubic",
+      "vision": "AI will emerge, not be created. Decentralized, community-led.",
+      "timeline": "Emergent, not scheduled",
+      "key_quotes": [
+        "Artificial Intelligence will not be created; it will emerge.",
+        "I've never seen such a powerful yet very simple construction of an ANN!"
+      ],
+      "approach": "Decentralized AI through blockchain. Community-driven emergence.",
+      "risk_view": "Unknown. The paradigm is still forming.",
+      "episode_hook": "The man who says AI will emerge like a fungus. Not built, but grown.",
+      "sources": ["qubic.org", "Aigarth project"]
+    },
+    "nate_soares": {
+      "name": "Nate Soares",
+      "role": "Executive Director, MIRI",
+      "vision": "Co-author with Yudkowsky. AI extinction is the defining challenge.",
+      "timeline": "Urgent",
+      "key_quotes": [
+        "If Anyone Builds It, Everyone Dies."
+      ],
+      "approach": "Technical AI safety research. Decision theory. Rationality.",
+      "risk_view": "Existential. Same as Yudkowsky.",
+      "episode_hook": "The quiet partner who co-wrote the scariest book about AI.",
+      "sources": ["intelligence.org"]
     }
   },
 
@@ -125,50 +197,62 @@
     {
       "title": "Sam Altman's AGI: The Man Who Says He Knows How to Build God",
       "visionary": "sam_altman",
-      "hook": "He says he knows how to build AGI. He's losing sleep over it. Literally.",
-      "sources": ["openai.com/research", "blog.samaltman.com", "The Verge GPT-6 coverage"]
+      "hook": "He says he knows how to build AGI. He's losing sleep over it. Literally."
     },
     {
       "title": "Elon Musk's AGI: Rockets, Grok, and the End of the World",
       "visionary": "elon_musk",
-      "hook": "He builds rockets to escape Earth. He builds AI that might destroy it.",
-      "sources": ["x.com/elonmusk", "xAI announcements", "SpaceX"]
+      "hook": "He builds rockets to escape Earth. He builds AI that might destroy it."
     },
     {
       "title": "Demis Hassabis's AGI: The Gamer Who's Building God",
       "visionary": "demis_hassabis",
-      "hook": "He started with video games. Now he's solving protein folding. And he's worried.",
-      "sources": ["deepmind.google/research", "Business Insider", "WSJ"]
+      "hook": "He started with video games. Now he's solving protein folding. And he's worried."
     },
     {
       "title": "Dario Amodei's AGI: The Safety Man in the Race",
       "visionary": "dario_amodei",
-      "hook": "He quit OpenAI to build AI safely. Now he's racing the clock.",
-      "sources": ["anthropic.com/research", "The Verge"]
+      "hook": "He quit OpenAI to build AI safely. Now he's racing the clock."
     },
     {
       "title": "Jensen Huang's AGI: The Shovel Seller Says the Gold Is Here",
       "visionary": "jensen_huang",
-      "hook": "NVIDIA sells the shovels. Jensen says the gold is already found.",
-      "sources": ["NVIDIA earnings calls", "GTC"]
+      "hook": "NVIDIA sells the shovels. Jensen says the gold is already found."
     },
     {
-      "title": "Ben Goertzel's AGI: Build It and Give It Away",
-      "visionary": "ben_goertzel",
-      "hook": "He wants to build AGI and make it open source. What could go wrong?",
-      "sources": ["AGI-26 conference", "SingularityNET"]
+      "title": "Eliezer Yudkowsky's AGI: The Prophet of Doom",
+      "visionary": "eliezer_yudkowsky",
+      "hook": "He's been saying we're dead for 20 years. And he's getting louder."
+    },
+    {
+      "title": "Roman Yampolskiy's AGI: The Professor Who Proved We Can't Control It",
+      "visionary": "roman_yampolskiy",
+      "hook": "99.9% chance of extinction. And he sleeps really well at night."
+    },
+    {
+      "title": "Gill Verdon's AGI: The Physicist Who Says Accelerate Everything",
+      "visionary": "gill_verdon",
+      "hook": "He created e/acc. Build faster, break nothing."
+    },
+    {
+      "title": "Sergey Ivancheglo's AGI: The Man Who Says AI Will Emerge Like a Fungus",
+      "visionary": "sergey_ivancheglo",
+      "hook": "Not built, but grown. Decentralized. Community-led."
     },
     {
       "title": "Gary Marcus's AGI: The Man Who Says Everyone Is Wrong",
       "visionary": "gary_marcus",
-      "hook": "The skeptic in the room. And he might be right.",
-      "sources": ["garymarcus.org", "Twitter/X"]
+      "hook": "The skeptic in the room. And he might be right."
     },
     {
       "title": "Nick Bostrom's AGI: The Philosopher Who Scared Silicon Valley",
       "visionary": "nick_bostrom",
-      "hook": "He wrote the book. Now everyone is living in it.",
-      "sources": ["nickbostrom.com", "Superintelligence"]
+      "hook": "He wrote the book. Now everyone is living in it."
+    },
+    {
+      "title": "The Doomers vs. The Builders: A Sleepy Debate",
+      "visionary": "yudkowsky_vs_altman",
+      "hook": "One says we're dead. The other says we're building God. Both might be right."
     }
   ]
 }
