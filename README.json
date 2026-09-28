@@ -17,7 +17,25 @@
   "structure": {
     "graph.json": "All nodes and edges. The single source of truth.",
     "templates/video.json": "Video template with placeholders.",
+    "templates/deep_etymology_v2.json": "2-hour essay template with 6 sections, WPM targets, tone rules.",
     "channels/{name}/videos/{seq}_{title}.json": "Individual video definitions.",
     "channels/{name}/channel.yaml": "Channel configuration (human-readable)."
+  },
+
+  "process_notes": {
+    "etymology_channel": {
+      "status": "active",
+      "template": "templates/deep_etymology_v2.json",
+      "completed_videos": ["vegetable"],
+      "pipeline": "1. Etymonline + Wiktionary (roots/cognates) → 2. Aristotle/philosophy passages → 3. Historical timeline → 4. Modern science → 5. Weave into 6-section essay → 6. NoSlop check",
+      "word_pool": ["vegetable", "algorithm", "silly", "nice", "panic", "salary", "companion", "disaster", "trivial", "sanguine"],
+      "research_sources": {
+        "etymonline": "https://www.etymonline.com",
+        "wiktionary": "https://en.wiktionary.org",
+        "gutenberg": "https://www.gutenberg.org",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov"
+      },
+      "voice_clone_approach": "Qwen3-TTS with reference audio per channel (not per video)"
+    }
   }
 }

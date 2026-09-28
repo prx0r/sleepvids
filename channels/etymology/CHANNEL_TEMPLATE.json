@@ -1,0 +1,176 @@
+{
+  "channel": "train_rides",
+  "title": "Train Rides for Sleep",
+  "description": "Long train journeys through Germany, England, and America. Rhythmic carriage sounds, passing landscapes, and the gentle rocking of the tracks. From ICE high-speed to Amtrak cross-country.",
+
+  "engine": "E4",
+  "shelf": "PLACE",
+
+  "concept": "Train rides are perfect sleep content. The rhythmic clicking of wheels on tracks, the gentle swaying, the world passing by outside the window. Each video simulates a multi-hour train journey with ambient sounds, near-static visuals, and optional voice announcements.",
+
+  "audio_style": {
+    "primary": "train ambient loop (wheel rhythm, wind, track joints)",
+    "optional": "soft conductor announcements at intervals",
+    "bed": "brown noise underneath at 25% volume",
+    "visual": "train window view OR dark cabin interior OR black screen"
+  },
+
+  "routes": [
+    {
+      "id": "ice_berlin_hamburg",
+      "country": "germany",
+      "operator": "DB ICE",
+      "from": "Berlin Hbf",
+      "to": "Hamburg-Altona",
+      "duration_hours": 1.88,
+      "distance_km": 289,
+      "description": "Germany's flagship high-speed line. Flat farmland, small towns, the Elbe river crossing. Mostly above-ground with tunnels near cities.",
+      "scenes": [
+        "Departure from Berlin Hbf (underground station)",
+        "Brandenburg flatland (fields, wind turbines)",
+        "Wolfsburg area (VW factory visible from train)",
+        "Lüneburg heath (purple in summer)",
+        "Elbe river crossing",
+        "Arrival Hamburg-Altona"
+      ]
+    },
+    {
+      "id": "ice_munich_nuremberg",
+      "country": "germany",
+      "operator": "DB ICE",
+      "from": "München Hbf",
+      "to": "Nürnberg Hbf",
+      "duration_hours": 1.08,
+      "distance_km": 171,
+      "description": "Bavarian countryside. Rolling hills, medieval towns, the Franconian lakes district. Short but scenic.",
+      "scenes": [
+        "Departure Munich (underground)",
+        "Bavarian plateau (farms, churches)",
+        "Franconian lake district (Großer Brombachsee)",
+        "Approaching Nuremberg (castle visible on hill)"
+      ]
+    },
+    {
+      "id": "ec_london_paris",
+      "country": "england-france",
+      "operator": "Eurostar",
+      "from": "London St Pancras",
+      "to": "Paris Gare du Nord",
+      "duration_hours": 2.25,
+      "distance_km": 492,
+      "description": "The Channel Tunnel crossing. Green English farmland, the white cliffs of Dover, the 50km underwater tunnel, then French countryside into Paris.",
+      "scenes": [
+        "Departure London (Victorian station)",
+        "Kent countryside (orchards, oast houses)",
+        "White cliffs of Dover visible",
+        "Channel Tunnel (50min complete darkness)",
+        "French countryside (fields, villages)",
+        "Approaching Paris (suburban, then Gare du Nord)"
+      ]
+    },
+    {
+      "id": "em_london_edinburgh",
+      "country": "england-scotland",
+      "operator": "LNER",
+      "from": "London Kings Cross",
+      "to": "Edinburgh Waverley",
+      "duration_hours": 4.33,
+      "distance_km": 632,
+      "description": "The East Coast Main Line. London commuter belt, Yorkshire moors, Durham castle, Newcastle, the Scottish border, then Edinburgh.",
+      "scenes": [
+        "Departure Kings Cross",
+        "London suburbs (terraced houses)",
+        "Cambridgeshire fenland (flat, water)",
+        "Yorkshire moors (heather, stone walls)",
+        "Durham castle and cathedral (on hill above river)",
+        "Newcastle (Tyne bridge visible)",
+        "Northumberland coast (castle ruins)",
+        "Crossing the border",
+        "Approaching Edinburgh (Arthur's Seat visible)"
+      ]
+    },
+    {
+      "id": "celifornia_san_francisco_la",
+      "country": "usa",
+      "operator": "Amtrak Coast Starlight",
+      "from": "San Francisco (Emeryville)",
+      "to": "Los Angeles Union Station",
+      "duration_hours": 13.5,
+      "distance_km": 800,
+      "description": "One of America's most beautiful train rides. The Bay Area, Central Valley agriculture, the Pacific coast at San Luis Obispo, then into LA.",
+      "scenes": [
+        "Departure Emeryville (Bay Bridge view)",
+        "Central Valley (endless farmland, orchards)",
+        "Coastal mountains (rolling green in spring)",
+        "Pacific Ocean visible (San Luis Obispo to Santa Barbara)",
+        "Malibu coastline",
+        "LA suburbs (freeways, palm trees)",
+        "Arrival Union Station"
+      ]
+    },
+    {
+      "id": "celifornia_seattle_portland",
+      "country": "usa",
+      "operator": "Amtrak Coast Starlight",
+      "from": "Seattle King Street",
+      "to": "Portland Union Station",
+      "duration_hours": 3.5,
+      "distance_km": 280,
+      "description": "Puget Sound, the Olympic Mountains, the Columbia River, and the lush Pacific Northwest. Short and stunning.",
+      "scenes": [
+        "Departure Seattle (downtown skyline, Puget Sound)",
+        "Olympic Mountains visible across the sound",
+        "Tacoma Narrows bridge",
+        "Washington state farmland",
+        "Columbia River (border with Oregon)",
+        "Arrival Portland (Union Station, downtown bridges)"
+      ]
+    },
+    {
+      "id": "hikari_tokyo_osaka",
+      "country": "japan",
+      "operator": "JR Central Shinkansen",
+      "from": "Tokyo Station",
+      "to": "Shin-Osaka Station",
+      "duration_hours": 2.5,
+      "distance_km": 552,
+      "description": "The bullet train. Urban Tokyo, then Mount Fuji visible, the Japanese Alps, then Osaka. Iconic.",
+      "scenes": [
+        "Departure Tokyo (skyscrapers, dense urban)",
+        "Mount Fuji visible (30min window, weather permitting)",
+        "Japanese Alps (snow peaks, rivers)",
+        "Nagoya (brief stop)",
+        "Approaching Osaka (suburban, then urban)",
+        "Arrival Shin-Osaka"
+      ]
+    }
+  ],
+
+  "seo": {
+    "title_formula": "The Word '{Word}' — {Origin Story} | Sleepy Etymology",
+    "primary_keyword": "etymology sleep",
+    "tags": ["etymology", "word origins", "linguistics", "history", "sleep", "vocabulary", "philosophy", "science", "fun facts"]
+  },
+
+  "format_specs": {
+    "max_word_length": 15,
+    "min_etymology_depth": 3,
+    "required_sections": 6,
+    "word_count_per_section": {
+      "hook": "200-400",
+      "etymology": "1200-2000",
+      "history": "2500-3500",
+      "philosophy": "2000-3000",
+      "science": "2000-3000",
+      "return": "800-1500"
+    }
+  },
+
+  "voice_examples": [
+    "The word '{word}' comes from the {origin_language} '{root_word}', which meant '{original_meaning}'.",
+    "But here's the twist: {twist}",
+    "Fast-forward {time_period}, and the word had {transformation}.",
+    "Scientists now know that {modern_finding}.",
+    "So the next time you {modern_usage}, remember: you're {callback_to_origin}."
+  ]
+}

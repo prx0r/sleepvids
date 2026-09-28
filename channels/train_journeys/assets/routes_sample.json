@@ -1,0 +1,83 @@
+{
+  "channel_id": "train_journeys",
+  "title": "Train Journeys for Sleep",
+  "description": "Real train timetables read out gently. Authentic station names, departure times, and route details to drift off to.",
+
+  "engine": "E4",
+  "shelf": "PLACE",
+
+  "vibe": "Platform announcements at 3am. The 14:23 to York reads out calling points while the seats are empty and the carriage sways. Contemplative, rhythmic, real.",
+  "rhythm": "Slow, regular, hypnotic. Each station announcement beats like a wheel on track joints.",
+  "audio_style": {
+    "primary": "TTS announcer reading station names and times",
+    "optional": "layered carriage ambience underneath",
+    "pacing": "~90 WPM, unhurried, with soft pauses between stops"
+  },
+  "seo": {
+    "title_formula": "{Route} Train — Full Journey Timetable for Sleep | {Duration} Hours",
+    "primary_keyword": "train journey sleep",
+    "tags": ["train", "railway", "timetable", "sleep", "ambience", "train sounds", "rail journey", "departures", "arrivals"]
+  },
+
+  "voice": {
+    "id": "V10_Companion",
+    "style": "Warm, clear, measured. Like a pleasant station announcer at 3am. No rush, no excitement. The voice of someone who has announced the same platform a thousand times and finds it mildly interesting still."
+  },
+
+  "routes": [
+    {
+      "id": "lon_edi",
+      "route": "London Kings Cross → Edinburgh Waverley",
+      "operator": "LNER",
+      "duration_hours": 4.5,
+      "stops": ["London Kings Cross", "York", "Darlington", "Edinburgh Wavelery"],
+      "departures": ["06:00", "08:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00"],
+      "notes": "East Coast Main Line. Historic route, opened 1850. Flying Scotsman territory."
+    },
+    {
+      "id": "lon_mcr",
+      "route": "London Euston → Manchester Piccadilly",
+      "operator": "Avanti West Coast",
+      "duration_hours": 2.25,
+      "stops": ["London Euston", "Watford Junction", "Milton Keynes Central", "Rugby", "Stoke-on-Trent", "Stockport", "Manchester Piccadilly"],
+      "departures": ["06:15", "07:15", "08:15", "09:15", "10:15", "11:15", "12:15", "13:15", "14:15", "15:15", "16:15", "17:15", "18:15", "19:15"],
+      "notes": "West Coast Main Line. The 08:15 is the flagship service."
+    },
+    {
+      "id": "lon_bri",
+      "route": "London Victoria → Brighton",
+      "operator": "Southern",
+      "duration_hours": 1.0,
+      "stops": ["London Victoria", "Clapham Junction", "East Croydon", "Gatwick Airport", "Brighton"],
+      "departures": ["every 15 minutes from 05:30 to 23:30"],
+      "notes": "Brighton Main Line. Frequent commuter route, very regular rhythm."
+    },
+    {
+      "id": "bri_sou",
+      "route": "Brighton → Southampton Central",
+      "operator": "Great Western Railway",
+      "duration_hours": 3.5,
+      "stops": ["Brighton", "Hove", "Southwick", "Shoreham-by-Sea", "Lancing", "Worthing", "East Worthing", "Goring-by-Sea", "Durrington-on-Sea", "Angmering", "Littlehampton", "Ford", "Barnham", "Bognor Regis", "Chichester", "Fishbourne", "Bosham", "Nutbourne", "Emsworth", "Warblington", "Bedhampton", "Hilsea", "Fratton", "Portsmouth & Southsea", "Portsmouth Harbour", "Cosham", "Paulsgrove", "Fareham", "Swanwick", "Bursledon", "Hamble", "Sholing", "Woolston", "St Denys", "Swaythling", "Eastleigh", "Chandler's Ford", "Romsey", "Mottisfont & Dunbridge", "Grateley", "Andover", "Whitchurch", "Overton", "Basingstoke", "Winchfield", "Hook", "Fleet", "Farnborough", "Brookwood", "Woking", "Worplesdon", "Guildford", "London Road", "Dorking Deepdene", "Reigate", "Redhill", "Merstham", "Coulsdon South", "Purley", "East Croydon", "London Victoria"],
+      "departures": ["06:00", "08:00", "10:00", "12:00", "14:00", "16:00", "18:00"],
+      "notes": "Long cross-country route via Sussex and Hampshire coast."
+    },
+    {
+      "id": "lon_gla",
+      "route": "London Euston → Glasgow Central",
+      "operator": "Avanti West Coast",
+      "duration_hours": 5.5,
+      "stops": ["London Euston", "Oxenholme Lake District", "Penrith North Lakes", "Carlisle", "Lockerbie", "Glasgow Central"],
+      "departures": ["06:00", "09:00", "12:00", "15:00", "18:00"],
+      "notes": "West Coast Main Line. One of the longest non-stop services on the network. Shorter calling pattern on some services."
+    },
+    {
+      "id": "edi_inv",
+      "route": "Edinburgh Waverley → Inverness",
+      "operator": "ScotRail",
+      "duration_hours": 3.5,
+      "stops": ["Edinburgh Waverley", "Haymarket", "Linlithgow", "Falkirk Grahamston", "Croy", "Bishopbriggs", "Lenzie", "Cumbernauld", "Falkirk High", "Polmont", "Stirling", "Dunblane", "Gleneagles", "Perth", "Dunkeld & Birnam", "Pitlochry", "Blair Atholl", "Dalwhinnie", "Newtonmore", "Kingussie", "Aviemore", "Inverness"],
+      "departures": ["07:30", "09:30", "11:30", "13:30", "15:30", "17:30", "19:30"],
+      "notes": "Highland Main Line. One of the most scenic routes in Britain."
+    }
+  ]
+}
