@@ -1,0 +1,10 @@
+{
+  "id": "lon_gla",
+  "route": "London Euston → Glasgow Central",
+  "operator": "Avanti West Coast",
+  "duration_hours": 5.5,
+  "stops": ["London Euston", "Oxenholme Lake District", "Penrith North Lakes", "Carlisle", "Lockerbie", "Glasgow Central"],
+  "departures": ["06:00", "09:00", "12:00", "15:00", "18:00"],
+  "notes": "West Coast Main Line. One of the longest non-stop services on the network.",
+  "format": "standard_class"
+}

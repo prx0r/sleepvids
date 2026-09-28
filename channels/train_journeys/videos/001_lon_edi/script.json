@@ -1,0 +1,16 @@
+{
+  "title": "London Kings Cross to Edinburgh Waverley — Full Journey Timetable for Sleep",
+  "route_id": "lon_edi",
+  "operator": "LNER",
+  "announcements": [
+    {"time": "0:30", "text": "This is the ten o'clock departure from London Kings Cross to Edinburgh Waverley, calling at York, Darlington, and Edinburgh Waverley. This train is formed of eight carriages. First class is in carriage D.", "station": "London Kings Cross"},
+    {"time": "60:00", "text": "We are now approaching York. We will be calling at York in approximately two minutes. Alighting passengers, please ensure you have all your belongings with you.", "station": "York"},
+    {"time": "62:00", "text": "We are now at York. We will be departing York in approximately two minutes.", "station": "York"},
+    {"time": "95:00", "text": "We are now approaching Darlington. We will be calling at Darlington in approximately two minutes.", "station": "Darlington"},
+    {"time": "97:00", "text": "We are now at Darlington. We will be departing Darlington in approximately two minutes.", "station": "Darlington"},
+    {"time": "120:00", "text": "Good afternoon. This is your train manager speaking. We are making good progress up the East Coast Main Line. We are currently passing through Northumberland. The weather in Edinburgh this afternoon is expected to be clear and cold, around eight degrees.", "station": "Northumberland"},
+    {"time": "170:00", "text": "We are now crossing the border into Scotland. We will be arriving at Edinburgh Waverley in approximately twenty-five minutes.", "station": "Scottish Borders"},
+    {"time": "195:00", "text": "We are now approaching Edinburgh Waverley. We will be arriving at Edinburgh Waverley in approximately two minutes. Alighting passengers, please ensure you have all your belongings with you.", "station": "Edinburgh Waverley"},
+    {"time": "197:00", "text": "We are now at Edinburgh Waverley. This is the end of the service. Thank you for travelling with LNER. We hope you have a pleasant stay in Edinburgh.", "station": "Edinburgh Waverley"}
+  ]
+}

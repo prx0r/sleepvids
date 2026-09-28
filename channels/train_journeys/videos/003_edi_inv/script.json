@@ -1,0 +1,19 @@
+{
+  "title": "Edinburgh Waverley to Inverness — Full Journey Timetable for Sleep",
+  "route_id": "edi_inv",
+  "operator": "ScotRail",
+  "announcements": [
+    {"time": "0:30", "text": "This is the nine-thirty departure from Edinburgh Waverley to Inverness, calling at Stirling, Perth, Pitlochry, Aviemore, and Inverness. This train is formed of four carriages.", "station": "Edinburgh Waverley"},
+    {"time": "20:00", "text": "We are now approaching Stirling. Stirling Castle can be seen on the hill to your right. We will be calling at Stirling in approximately two minutes.", "station": "Stirling"},
+    {"time": "22:00", "text": "We are now at Stirling. We will be departing Stirling in approximately two minutes.", "station": "Stirling"},
+    {"time": "55:00", "text": "We are now approaching Perth. We will be calling at Perth in approximately two minutes.", "station": "Perth"},
+    {"time": "57:00", "text": "We are now at Perth. We will be departing Perth in approximately two minutes.", "station": "Perth"},
+    {"time": "85:00", "text": "We are now entering the Highlands. The scenery from here to Inverness is considered some of the most beautiful in the United Kingdom.", "station": "The Highlands"},
+    {"time": "100:00", "text": "We are now approaching Pitlochry. We will be calling at Pitlochry in approximately two minutes.", "station": "Pitlochry"},
+    {"time": "102:00", "text": "We are now at Pitlochry. We will be departing in approximately two minutes.", "station": "Pitlochry"},
+    {"time": "140:00", "text": "We are now approaching Aviemore. Aviemore is a popular resort town in the Cairngorms National Park. We will be calling at Aviemore in approximately two minutes.", "station": "Aviemore"},
+    {"time": "142:00", "text": "We are now at Aviemore. We will be departing in approximately two minutes.", "station": "Aviemore"},
+    {"time": "175:00", "text": "We are now approaching Inverness. We will be arriving at Inverness in approximately two minutes. Alighting passengers, please ensure you have all your belongings with you.", "station": "Inverness"},
+    {"time": "177:00", "text": "We are now at Inverness. This is the end of the service. Thank you for travelling with ScotRail. We hope you have a pleasant stay in the Highlands.", "station": "Inverness"}
+  ]
+}

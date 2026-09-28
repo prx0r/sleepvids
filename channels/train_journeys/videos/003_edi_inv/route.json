@@ -1,0 +1,10 @@
+{
+  "id": "edi_inv",
+  "route": "Edinburgh Waverley → Inverness",
+  "operator": "ScotRail",
+  "duration_hours": 3.5,
+  "stops": ["Edinburgh Waverley", "Haymarket", "Linlithgow", "Falkirk Grahamston", "Croy", "Bishopbriggs", "Lenzie", "Cumbernauld", "Falkirk High", "Polmont", "Stirling", "Dunblane", "Gleneagles", "Perth", "Dunkeld & Birnam", "Pitlochry", "Blair Atholl", "Dalwhinnie", "Newtonmore", "Kingussie", "Aviemore", "Inverness"],
+  "departures": ["07:30", "09:30", "11:30", "13:30", "15:30", "17:30", "19:30"],
+  "notes": "Highland Main Line. One of the most scenic routes in Britain.",
+  "format": "standard_class"
+}

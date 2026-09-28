@@ -1,0 +1,64 @@
+{
+  "channel": "train_journeys",
+  "title": "Train Journeys for Sleep",
+  "description": "Real train timetables read out gently. Authentic station names, departure times, and route details to drift off to.",
+
+  "engine": "E4",
+  "shelf": "PLACE",
+
+  "vibe": "Platform announcements at 3am. The 14:23 to York reads out calling points while the seats are empty and the carriage sways. Contemplative, rhythmic, real.",
+  "rhythm": "Slow, regular, hypnotic. Each station announcement beats like a wheel on track joints.",
+  "audio_style": {
+    "primary": "TTS announcer reading station names and times",
+    "optional": "layered carriage ambience underneath",
+    "pacing": "~90 WPM, unhurried, with soft pauses between stops"
+  },
+
+  "voice": {
+    "id": "V10_Companion",
+    "style": "Warm, clear, measured. Like a pleasant station announcer at 3am. No rush, no excitement. The voice of someone who has announced the same platform a thousand times and finds it mildly interesting still."
+  },
+
+  "formats": {
+    "standard_class": {
+      "visual": "Standard carriage interior, rows of seats, window view of passing countryside",
+      "ambiance": "Rhythmic wheel-on-track sound, occasional brake squeal, gentle sway",
+      "vibe": "The late-night service. Half-empty carriage. The announcer's voice echoes slightly. You watch the dark countryside pass."
+    },
+    "first_class": {
+      "visual": "Wider seats, table between facing seats, reading lights, quieter carriage",
+      "ambiance": "Muted wheel sound, soft HVAC hum, the occasional page turn",
+      "vibe": "The premium carriage. Leather seats. A single reading light. The announcer is more polite here, almost whispering."
+    },
+    "sleeper": {
+      "visual": "Private compartment, bunk beds, small window, dim lighting",
+      "ambiance": "Near silence. The wheels are a distant rhythm. The heater clicks on and off.",
+      "vibe": "The Caledonian Sleeper. Your own compartment. The train rocks you to sleep. The announcer is a voice from another world."
+    }
+  },
+
+  "data_sources": [
+    {"name": "National Rail Enquiries", "url": "https://www.nationalrail.co.uk", "license": "free", "format": "Web — timetables, station names, calling points"},
+    {"name": "Network Rail Open Data", "url": "https://www.networkrail.co.uk", "license": "free", "format": "API — real-time running info"},
+    {"name": "Transport for Wales", "url": "https://tfwrail.wales", "license": "free", "format": "Web — Welsh/English bilingual announcements"}
+  ],
+
+  "seo": {
+    "title_formula": "{Route} Train — Full Journey Timetable for Sleep | {Duration} Hours",
+    "primary_keyword": "train journey sleep",
+    "tags": ["train", "railway", "timetable", "sleep", "ambience", "train sounds", "rail journey", "departures", "arrivals", "{operator}", "{route}"]
+  },
+
+  "compositor": {
+    "type": "lofi_train",
+    "layers": [
+      {"name": "carriage_base", "type": "static_image", "description": "Train carriage interior (window view)"},
+      {"name": "station_popup", "type": "text_overlay", "description": "Station name appears as text, synchronized with announcer"},
+      {"name": "dim_lights", "type": "lighting", "description": "Lights dim as journey progresses"}
+    ],
+    "motion": {
+      "type": "subtle_parallax",
+      "description": "Window view shifts slightly as if train is moving"
+    }
+  }
+}

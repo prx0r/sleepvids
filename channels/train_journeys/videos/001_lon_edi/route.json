@@ -1,0 +1,10 @@
+{
+  "id": "lon_edi",
+  "route": "London Kings Cross → Edinburgh Waverley",
+  "operator": "LNER",
+  "duration_hours": 4.5,
+  "stops": ["London Kings Cross", "York", "Darlington", "Edinburgh Waverley"],
+  "departures": ["06:00", "08:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00"],
+  "notes": "East Coast Main Line. Historic route, opened 1850. Flying Scotsman territory.",
+  "format": "standard_class"
+}

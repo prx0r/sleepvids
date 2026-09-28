@@ -1,0 +1,20 @@
+{
+  "title": "London Euston to Glasgow Central — Full Journey Timetable for Sleep",
+  "route_id": "lon_gla",
+  "operator": "Avanti West Coast",
+  "announcements": [
+    {"time": "0:30", "text": "This is the twelve o'clock departure from London Euston to Glasgow Central, calling at Oxenholme Lake District, Penrith North Lakes, Carlisle, Lockerbie, and Glasgow Central. This train is formed of nine carriages.", "station": "London Euston"},
+    {"time": "60:00", "text": "We are now passing through the English Lake District. The scenery on your left is particularly spectacular around Oxenholme.", "station": "Lake District"},
+    {"time": "85:00", "text": "We are now approaching Oxenholme Lake District. We will be calling at Oxenholme in approximately two minutes.", "station": "Oxenholme Lake District"},
+    {"time": "87:00", "text": "We are now at Oxenholme Lake District. We will be departing in approximately two minutes.", "station": "Oxenholme Lake District"},
+    {"time": "110:00", "text": "We are now approaching Penrith North Lakes. We will be calling at Penrith in approximately two minutes.", "station": "Penrith North Lakes"},
+    {"time": "112:00", "text": "We are now at Penrith North Lakes. We will be departing in approximately two minutes.", "station": "Penrith North Lakes"},
+    {"time": "140:00", "text": "We are now approaching Carlisle. We will be calling at Carlisle in approximately two minutes. Carlisle is the last stop in England before we cross into Scotland.", "station": "Carlisle"},
+    {"time": "142:00", "text": "We are now at Carlisle. We will be departing Carlisle in approximately three minutes.", "station": "Carlisle"},
+    {"time": "180:00", "text": "Good afternoon. We are now crossing the border into Scotland. The weather in Glasgow this afternoon is expected to be overcast, around nine degrees.", "station": "Scottish Borders"},
+    {"time": "210:00", "text": "We are now approaching Lockerbie. We will be calling at Lockerbie in approximately two minutes.", "station": "Lockerbie"},
+    {"time": "212:00", "text": "We are now at Lockerbie. We will be departing in approximately two minutes.", "station": "Lockerbie"},
+    {"time": "250:00", "text": "We are now approaching Glasgow Central. We will be arriving at Glasgow Central in approximately two minutes. Alighting passengers, please ensure you have all your belongings with you.", "station": "Glasgow Central"},
+    {"time": "252:00", "text": "We are now at Glasgow Central. This is the end of the service. Thank you for travelling with Avanti West Coast. We hope you have a pleasant stay in Glasgow.", "station": "Glasgow Central"}
+  ]
+}
